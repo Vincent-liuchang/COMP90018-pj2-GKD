@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">560773761027-6dcvm022o6gvpnt21pc8blpfkugglaqe.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://unibuilding-dae10.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">560773761027</string>
+    <string name="google_api_key" translatable="false">AIzaSyBoo2bxOsWChHiWuyCKklkTMggEE5fkpH8</string>
+    <string name="google_app_id" translatable="false">1:560773761027:android:afdffe00caf2489667a636</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBoo2bxOsWChHiWuyCKklkTMggEE5fkpH8</string>
+    <string name="google_storage_bucket" translatable="false">unibuilding-dae10.appspot.com</string>
+    <string name="project_id" translatable="false">unibuilding-dae10</string>
+</resources>

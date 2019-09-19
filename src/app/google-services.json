@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "560773761027",
+    "firebase_url": "https://unibuilding-dae10.firebaseio.com",
+    "project_id": "unibuilding-dae10",
+    "storage_bucket": "unibuilding-dae10.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:560773761027:android:afdffe00caf2489667a636",
+        "android_client_info": {
+          "package_name": "com.example.mobile_pj2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "560773761027-6dcvm022o6gvpnt21pc8blpfkugglaqe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoo2bxOsWChHiWuyCKklkTMggEE5fkpH8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "560773761027-6dcvm022o6gvpnt21pc8blpfkugglaqe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
