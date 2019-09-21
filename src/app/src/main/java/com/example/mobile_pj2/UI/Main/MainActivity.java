@@ -63,18 +63,44 @@ public class MainActivity extends AppCompatActivity {
 
     private void addBuildings(){
 
-        Building oldEngineering = new Building("Old Engineering");
-        Building oldArts = new Building("Old Arts");
-        Building lawBuilding = new Building("Law Building");
-        Building baillieuLibrary = new Building("Baillieu Library");
-        Building ERC = new Building("ERC");
+          Building oldEngineering = new Building("Old Engineering",
+                new Point(144959078, -37798728),
+                new Point(144962223, -37799331),
+                new Point(144961319, -37799676),
+                new Point(144962141, -37799811));
+        Building Euson = new Building("Euson",
+                new Point(144959266, -37800913),
+                new Point(144959607, -37800960),
+                new Point(144959013, -37801914),
+                new Point(144959387, -37801931));
+        Building lawBuilding = new Building("Law Building",
+                new Point(144959654, -37802123),
+                new Point(144960485, -37802229),
+                new Point(144959680, -37802598),
+                new Point(144960458, -37802647));
+        Building baillieuLibrary = new Building("Baillieu Library",
+                new Point(144959138, -37798235),
+                new Point(144959583, -37798277),
+                new Point(144959078, -37798728),
+                new Point(144959514, -37798764));
+        Building ERC = new Building("ERC",
+                new Point(14462644,  -37798888),
+                new Point(144963333, -37798962),
+                new Point(144962555, -37799456),
+                new Point(144963135, -37799537));
+        Building biomedicalLibrary = new Building("Biomedical Library",
+                new Point(144959331, -37798801),
+                new Point(144959674, -37798826),
+                new Point(144959298, -37799133),
+                new Point(144959631, -37799152));
 
         buildingList = new ArrayList<>();
         buildingList.add(oldEngineering);
-        buildingList.add(oldArts);
+        buildingList.add(Euson);
         buildingList.add(lawBuilding);
         buildingList.add(ERC);
         buildingList.add(baillieuLibrary);
+        buildingList.add(biomedicalLibrary);
 
         for(Building building:buildingList) {
             this.dataManager.ListenPeopleInside(building, new FireBaseUpdateCallback() {
