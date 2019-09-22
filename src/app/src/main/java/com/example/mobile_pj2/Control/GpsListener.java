@@ -13,6 +13,7 @@ import android.os.Message;
 import com.example.mobile_pj2.Data.Model.Building;
 import com.example.mobile_pj2.Data.Model.GeoPoint;
 import com.example.mobile_pj2.Data.UpdateCallback;
+import com.example.mobile_pj2.UI.Main.MainActivity;
 
 import java.util.Collections;
 import java.util.List;
@@ -26,13 +27,13 @@ public class GpsListener implements Runnable {
     private String provider;
     private CopyOnWriteArrayList<Building> buildingList;
     private MainController mainController;
-    private UpdateCallback updateCallback;
+    private Handler handler;
 
-    public GpsListener(Context context, CopyOnWriteArrayList<Building> buildingList, MainController mainController,UpdateCallback updateCallback) {
+    public GpsListener(Handler handler, Context context, CopyOnWriteArrayList<Building> buildingList, MainController mainController) {
+        this.handler = handler;
         this.context = context;
         this.buildingList = buildingList;
         this.mainController = mainController;
-        this.updateCallback = updateCallback;
     }
 
     @SuppressLint("MissingPermission")
@@ -51,39 +52,39 @@ public class GpsListener implements Runnable {
         if (location != null) {
             updateLocation(location);
         }
-        locationManager.requestLocationUpdates(provider, 3, 5,locationlistener);
-    }
 
+        LocationListener locationListener  = new LocationListener(){
 
-    LocationListener locationlistener = new LocationListener() {
-        @Override
-        public void onLocationChanged(Location location) {
-            updateLocation(location);
-            Handler handler = new Handler() {
             @Override
-            public void handleMessage(Message msg) {
-                if(msg.what == 0) {
+            public void onLocationChanged(Location location) {
+                updateLocation(location);
+                Message message = new Message();
+                message.what = 1;
+                handler.sendMessage(message);
+            }
 
-                }
+            @Override
+            public void onStatusChanged(String s, int i, Bundle bundle) {
+
+            }
+
+            @Override
+            public void onProviderEnabled(String s) {
+
+            }
+
+            @Override
+            public void onProviderDisabled(String s) {
+
             }
         };
-        }
 
-        @Override
-        public void onStatusChanged(String s, int i, Bundle bundle) {
+        Looper.prepare();
+        locationManager.requestLocationUpdates(provider, 3, 5,locationListener);
+        Looper.loop();
 
-        }
+    }
 
-        @Override
-        public void onProviderEnabled(String s) {
-
-        }
-
-        @Override
-        public void onProviderDisabled(String s) {
-
-        }
-    };
 
     private void updateLocation(Location location) {
         double x = location.getLongitude();
@@ -104,6 +105,5 @@ public class GpsListener implements Runnable {
             }
         }
         Collections.sort(buildingList);
-
     }
 }

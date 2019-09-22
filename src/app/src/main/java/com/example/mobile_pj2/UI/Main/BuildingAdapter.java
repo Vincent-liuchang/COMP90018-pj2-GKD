@@ -49,7 +49,7 @@ public class BuildingAdapter extends BaseAdapter {
         TextView textView3 = view.findViewById(R.id.distance);
         textView1.setText(buildingList.get(i).getBuildingName());
         textView2.setText(Integer.toString(buildingList.get(i).getPeopleInside()));
-        textView3.setText(String.valueOf(buildingList.get(i).getDistance()));
+        textView3.setText(String.valueOf((int)buildingList.get(i).getDistance()));
         return view;
     }
 

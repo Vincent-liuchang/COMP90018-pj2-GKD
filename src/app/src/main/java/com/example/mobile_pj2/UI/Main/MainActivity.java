@@ -7,6 +7,8 @@ import android.Manifest;
 import android.content.Context;
 import android.os.Bundle;
 
+import android.os.Handler;
+import android.os.Message;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
@@ -26,9 +28,19 @@ public class MainActivity extends AppCompatActivity {
     private BuildingAdapter buildingAdapter = null;
     private Context mContext = null;
     private ListView list_main = null;
-    private Button button = null;
     private  TextView textView =null;
-    private DataManager dataManager = null;
+
+    public static  final int UpdateInterface = 1;
+
+    private Handler  mainHandler = new Handler(){
+        public void handleMessage(Message message){
+            switch(message.what){
+                case UpdateInterface:
+                    refreshUI();
+                    System.out.println("received Update request");break;
+            }
+        }
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,14 +48,13 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        dataManager = new DataManager();
 
         mContext = MainActivity.this;
 
         Configuration.setConfiguration(mContext);
         this.addBuildings();
 
-        MainController mainController = new MainController(this.mContext, buildingList,new UpdateCallback() {
+        MainController mainController = new MainController(this.mainHandler, this.mContext, buildingList,new UpdateCallback() {
             @Override
             public void update() {
                 buildingAdapter.update();
@@ -53,30 +64,28 @@ public class MainActivity extends AppCompatActivity {
         buildingAdapter = new BuildingAdapter(buildingList,mContext);
         bindViews();
         list_main.setAdapter(buildingAdapter);
+        refreshUI();
 
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                buildingAdapter.update();
-                for(Building building:buildingList) {
-                    if(building.getInside()) {
-                        textView.setText(building.getBuildingName());
-                        break;
-                    }
-                    textView.setText("no Building");
-                }
-            }
-        });
+
 
 
     }
 
-    private  void bindViews(){
+    private void refreshUI(){
+        buildingAdapter.update();
+        for(Building building:buildingList) {
+            if(building.getInside()) {
+                textView.setText(building.getBuildingName());
+                break;
+            }
+            textView.setText("no Building");
+        }
+    }
+
+    private void bindViews(){
         list_main = findViewById(R.id.list_main);
-        button = findViewById(R.id.button_test);
         textView = findViewById(R.id.where);
     }
-
     private void addBuildings(){
 
         buildingList = new CopyOnWriteArrayList<Building>();
