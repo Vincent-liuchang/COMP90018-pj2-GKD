@@ -177,30 +177,14 @@ public class MainActivity extends Activity {
 
     };
 
-    private void updateLocation(Location location) {
-
-        String latLng;
-
-        if (location != null) {
-
-            double lat = location.getLatitude();
-
-            double lng = location.getLongitude();
-
-
-
-            latLng = "Latitude:" + lat + "  Longitude:" + lng;
-            textView.setText("Latitude:" + lat + "  Longitude:" + lng );
-
-
-        } else {
-
-            latLng = "Can't access your location";
+   private void updateLocation(Location location) {
+        double x = location.getLongitude();
+        double y = location.getLatitude();
+        GeoPoint myLocation = new GeoPoint(x,y);
+        for(Building building: this.buildingList) {
+            building.calculateDistanse(myLocation);
+            if(building.isInside(myLocation){}
 
         }
-
-        Log.i(TAG, "The location has changed..");
-
-        Log.i(TAG, "Your Location:" +latLng);
 
     }
