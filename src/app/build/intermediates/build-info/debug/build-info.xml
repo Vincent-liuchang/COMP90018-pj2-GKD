@@ -7,23 +7,26 @@
     format="10"
     ir-eligibility="COMPATIBLE"
     plugin-version="3.4.2"
-    timestamp="1569130075115"
+    timestamp="1569136228443"
     token="2060656808879340209"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="222" />
+        duration="107" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="46" />
+        duration="26" />
     <task
         name="verifier"
-        duration="4" />
+        duration="3" />
 
+    <artifact
+        location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+        type="SPLIT" />
     <artifact
         location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
         type="SPLIT" />
@@ -75,8 +78,11 @@
     <build
         build-mode="COLD"
         ir-eligibility="COMPATIBLE"
-        timestamp="1569130075115"
+        timestamp="1569136228443"
         verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            type="SPLIT" />
         <artifact
             location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
             type="SPLIT" />

@@ -11,6 +11,7 @@ import com.example.mobile_pj2.Data.Model.Building;
 import com.example.mobile_pj2.R;
 
 import java.util.ArrayList;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 public class BuildingAdapter extends BaseAdapter {
 

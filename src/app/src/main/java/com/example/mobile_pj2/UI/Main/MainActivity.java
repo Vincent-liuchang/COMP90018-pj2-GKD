@@ -38,24 +38,30 @@ public class MainActivity extends AppCompatActivity {
         dataManager = new DataManager();
 
         mContext = MainActivity.this;
-        final MainController mainController = new MainController(this.mContext);
-
         this.addBuildings();
+
+        MainController mainController = new MainController(this.mContext, buildingList,new FireBaseUpdateCallback() {
+            @Override
+            public void update() {
+                buildingAdapter.update();
+            }
+        });
+
         buildingAdapter = new BuildingAdapter(buildingList,mContext);
         bindViews();
         list_main.setAdapter(buildingAdapter);
 
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Log.i(TAG,String.valueOf(mainController.getMyPool().getActiveCount()));
-
-
-                mainController.getMyPool().execute(new SubmitTask(1,"MSD"));
-
-                Log.i(TAG,String.valueOf(mainController.getMyPool().getActiveCount()));
-            }
-        });
+//        button.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Log.i(TAG,String.valueOf(mainController.getMyPool().getActiveCount()));
+//
+//
+//                mainController.getMyPool().execute(new SubmitTask(1,"MSD"));
+//
+//                Log.i(TAG,String.valueOf(mainController.getMyPool().getActiveCount()));
+//            }
+//        });
 
     }
 
@@ -66,6 +72,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void addBuildings(){
 
+        buildingList = new ArrayList<Building>();
+
         Building msd = new Building("MSD");
         Building giblinEunson = new Building("GiblinEunsonLibrary");
         Building lawBuilding = new Building("LawBuilding");
@@ -73,7 +81,6 @@ public class MainActivity extends AppCompatActivity {
         Building ERC = new Building("ERC");
         Building biomedicalLibrary = new Building("BiomedicalLibrary");
 
-        buildingList = new ArrayList<>();
         buildingList.add(msd);
         buildingList.add(giblinEunson);
         buildingList.add(lawBuilding);
@@ -81,13 +88,5 @@ public class MainActivity extends AppCompatActivity {
         buildingList.add(baillieuLibrary);
         buildingList.add(biomedicalLibrary);
 
-        for(Building building:buildingList) {
-            this.dataManager.ListenPeopleInside(building, new FireBaseUpdateCallback() {
-                @Override
-                public void update() {
-                    buildingAdapter.update();
-                }
-            });
-        }
     }
 }
