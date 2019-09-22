@@ -49,7 +49,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Log.i(TAG,String.valueOf(mainController.getMyPool().getActiveCount()));
-                mainController.getMyPool().execute(new SubmitTask(1,"OldArts"));
+
+
+                mainController.getMyPool().execute(new SubmitTask(1,"MSD"));
+
                 Log.i(TAG,String.valueOf(mainController.getMyPool().getActiveCount()));
             }
         });
@@ -63,18 +66,20 @@ public class MainActivity extends AppCompatActivity {
 
     private void addBuildings(){
 
-        Building oldEngineering = new Building("Old Engineering");
-        Building oldArts = new Building("Old Arts");
-        Building lawBuilding = new Building("Law Building");
-        Building baillieuLibrary = new Building("Baillieu Library");
+        Building msd = new Building("MSD");
+        Building giblinEunson = new Building("GiblinEunsonLibrary");
+        Building lawBuilding = new Building("LawBuilding");
+        Building baillieuLibrary = new Building("BaillieuLibrary");
         Building ERC = new Building("ERC");
+        Building biomedicalLibrary = new Building("BiomedicalLibrary");
 
         buildingList = new ArrayList<>();
-        buildingList.add(oldEngineering);
-        buildingList.add(oldArts);
+        buildingList.add(msd);
+        buildingList.add(giblinEunson);
         buildingList.add(lawBuilding);
         buildingList.add(ERC);
         buildingList.add(baillieuLibrary);
+        buildingList.add(biomedicalLibrary);
 
         for(Building building:buildingList) {
             this.dataManager.ListenPeopleInside(building, new FireBaseUpdateCallback() {
