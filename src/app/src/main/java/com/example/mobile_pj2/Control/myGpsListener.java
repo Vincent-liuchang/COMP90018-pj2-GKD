@@ -1,6 +1,5 @@
 package com.example.mobile_pj2.Control;
 
-import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.location.Location;
@@ -8,9 +7,7 @@ import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.os.Looper;
-import android.util.Log;
 
-import androidx.core.app.ActivityCompat;
 
 public class myGpsListener implements Runnable {
 

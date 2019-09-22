@@ -5,14 +5,14 @@ import androidx.core.app.ActivityCompat;
 
 import android.Manifest;
 import android.content.Context;
-import android.content.pm.PackageManager;
-import android.location.LocationManager;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
 
 import com.example.mobile_pj2.Control.MainController;
+import com.example.mobile_pj2.Control.SubmitTask;
 import com.example.mobile_pj2.Data.*;
 import com.example.mobile_pj2.Data.Model.*;
 import com.example.mobile_pj2.R;
@@ -20,9 +20,10 @@ import com.example.mobile_pj2.R;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
+    String TAG = getClass().getName();
 
-    private ArrayList<Building> buildingList =null;
-    private BuildingAdapter buildingAdapter =null;
+    private ArrayList<Building> buildingList = null;
+    private BuildingAdapter buildingAdapter = null;
     private Context mContext = null;
     private ListView list_main = null;
     private Button button = null;
@@ -36,21 +37,20 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         dataManager = new DataManager();
 
-        this.addBuildings();
-
         mContext = MainActivity.this;
-        bindViews();
+        final MainController mainController = new MainController(this.mContext);
 
+        this.addBuildings();
         buildingAdapter = new BuildingAdapter(buildingList,mContext);
-
+        bindViews();
         list_main.setAdapter(buildingAdapter);
-
-        MainController mainController = new MainController(this.mContext);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                buildingAdapter.update();
+                Log.i(TAG,String.valueOf(mainController.getMyPool().getActiveCount()));
+                mainController.getMyPool().execute(new SubmitTask(1,"OldArts"));
+                Log.i(TAG,String.valueOf(mainController.getMyPool().getActiveCount()));
             }
         });
 
@@ -84,10 +84,5 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
         }
-
     }
-
-
-//    https://firebase.google.com/docs/firestore/query-data/get-data?authuser=0
-
 }

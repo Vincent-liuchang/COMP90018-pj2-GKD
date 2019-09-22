@@ -17,11 +17,15 @@ public class MainController {
 
     public MainController(Context context){
         this.context = context;
-        this.myPool = new ThreadPoolExecutor(0, 2,
-                60L, TimeUnit.SECONDS,
+        this.myPool = new ThreadPoolExecutor(5, 5,
+                10L, TimeUnit.SECONDS,
                 new LinkedBlockingQueue<Runnable>());
 
         myGpsListener myGpsListener = new myGpsListener(context);
         myPool.execute(myGpsListener);
+    }
+
+    public ThreadPoolExecutor getMyPool(){
+        return myPool;
     }
 }
