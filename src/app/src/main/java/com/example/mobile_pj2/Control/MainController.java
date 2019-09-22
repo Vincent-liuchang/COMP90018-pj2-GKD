@@ -26,7 +26,7 @@ public class MainController {
                 10L, TimeUnit.SECONDS,
                 new LinkedBlockingQueue<Runnable>());
 
-        GpsListener GpsListener = new GpsListener(context,buildingArrayList,this, updateCallback);
+        GpsListener GpsListener = new GpsListener(context,buildingArrayList,this);
         DatabaseListener databaseListener = new DatabaseListener(buildingArrayList, updateCallback);
         myPool.execute(databaseListener);
         myPool.execute(GpsListener);

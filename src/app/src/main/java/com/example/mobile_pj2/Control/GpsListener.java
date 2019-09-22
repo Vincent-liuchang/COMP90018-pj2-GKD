@@ -24,13 +24,11 @@ public class GpsListener implements Runnable {
     private String provider;
     private CopyOnWriteArrayList<Building> buildingList;
     private MainController mainController;
-    private UpdateCallback updateCallback;
 
-    public GpsListener(Context context, CopyOnWriteArrayList<Building> buildingList, MainController mainController,UpdateCallback updateCallback) {
+    public GpsListener(Context context, CopyOnWriteArrayList<Building> buildingList, MainController mainController) {
         this.context = context;
         this.buildingList = buildingList;
         this.mainController = mainController;
-        this.updateCallback = updateCallback;
     }
 
     @SuppressLint("MissingPermission")
@@ -53,6 +51,7 @@ public class GpsListener implements Runnable {
         Looper.prepare();
         locationManager.requestLocationUpdates(provider, 3, 5,locationlistener);
         Looper.loop();
+
     }
 
 
@@ -60,7 +59,6 @@ public class GpsListener implements Runnable {
         @Override
         public void onLocationChanged(Location location) {
             updateLocation(location);
-            updateCallback.update();
         }
 
         @Override
@@ -98,6 +96,5 @@ public class GpsListener implements Runnable {
             }
         }
         Collections.sort(buildingList);
-
     }
 }
