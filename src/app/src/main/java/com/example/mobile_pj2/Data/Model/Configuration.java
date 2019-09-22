@@ -10,20 +10,9 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.logging.Logger;
 
-/**
- * Simple wrapper for using Properties(). Example:
- * <pre>
- * {@code
- * int port = Integer.parseInt(Configuration.getConfigurationValue("port"));
- * String[] peers = Configuration.getConfigurationValue("peers").split(",");
- * }
- * </pre>
- * @author aaron
- *
- */
 public class Configuration {
     private static Logger log = Logger.getLogger(Configuration.class.getName());
-    // the configuration file is stored in the root of the class path as a .properties file
+
     private static final String CONFIGURATION_FILE = "Buildings.properties";
 
     private static final Properties properties = new Properties();
@@ -37,12 +26,11 @@ public class Configuration {
         }
     }
 
-    @SuppressWarnings({ "rawtypes", "unchecked" })
     public static Map<String, String> getConfiguration() {
-        // ugly workaround to get String as generics
+
         Map temp = properties;
         Map<String, String> map = new HashMap<String, String>(temp);
-        // prevent the returned configuration from being modified
+
         return Collections.unmodifiableMap(map);
     }
 
@@ -51,11 +39,6 @@ public class Configuration {
         return properties.getProperty(key);
     }
 
-    public static void setConfigurationValue(String key, String value) {
-        properties.setProperty(key, value);
-    }
-
-    // private constructor to prevent initialization
     private Configuration() {
     }
 
