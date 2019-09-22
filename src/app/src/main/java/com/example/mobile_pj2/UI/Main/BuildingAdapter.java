@@ -10,15 +10,14 @@ import android.widget.TextView;
 import com.example.mobile_pj2.Data.Model.Building;
 import com.example.mobile_pj2.R;
 
-import java.util.ArrayList;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 public class BuildingAdapter extends BaseAdapter {
 
     private Context mContext;
-    private ArrayList<Building> buildingList;
+    private CopyOnWriteArrayList<Building> buildingList;
 
-    public BuildingAdapter(ArrayList<Building> buildingList, Context mContext) {
+    public BuildingAdapter(CopyOnWriteArrayList<Building> buildingList, Context mContext) {
         this.buildingList = buildingList;
         this.mContext = mContext;
     }
@@ -47,8 +46,10 @@ public class BuildingAdapter extends BaseAdapter {
         view = LayoutInflater.from(mContext).inflate(R.layout.building_item_list,viewGroup,false);
         TextView textView1 = view.findViewById(R.id.building_name);
         TextView textView2 = view.findViewById(R.id.people_count);
+        TextView textView3 = view.findViewById(R.id.distance);
         textView1.setText(buildingList.get(i).getBuildingName());
         textView2.setText(Integer.toString(buildingList.get(i).getPeopleInside()));
+        textView3.setText(String.valueOf(buildingList.get(i).getDistance()));
         return view;
     }
 

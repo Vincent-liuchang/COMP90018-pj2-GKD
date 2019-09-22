@@ -41,7 +41,7 @@ public class DataManager {
     }
 
 
-    public void ListenPeopleInside(final Building building, final FireBaseUpdateCallback callback){
+    public void ListenPeopleInside(final Building building, final UpdateCallback callback){
 
         Query query = buildingsRef.whereEqualTo("BuildingName", building.getBuildingName());
 

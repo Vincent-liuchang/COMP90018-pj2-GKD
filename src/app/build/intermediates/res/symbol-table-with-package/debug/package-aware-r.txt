@@ -802,6 +802,7 @@ id dialog_button
 id dimensions
 id direct
 id disableHome
+id distance
 id edit_query
 id end
 id expand_activities_button
@@ -902,6 +903,7 @@ id unchecked
 id uniform
 id up
 id useLogo
+id where
 id wide
 id withText
 id wrap
