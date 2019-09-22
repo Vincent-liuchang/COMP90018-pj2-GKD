@@ -5,6 +5,7 @@
 package com.example.mobile_pj2.Control;
 
 import android.content.Context;
+import android.os.Handler;
 
 
 import com.example.mobile_pj2.Data.UpdateCallback;
@@ -17,19 +18,22 @@ import java.util.concurrent.TimeUnit;
 
 public class MainController {
 
-    Context context;
-    ThreadPoolExecutor myPool;
+    private Context context;
+    private ThreadPoolExecutor myPool;
+    private Handler mainHandler;
 
-    public MainController(Context context, CopyOnWriteArrayList<Building> buildingArrayList, UpdateCallback updateCallback){
+    public MainController(Handler mainHandler,Context context, CopyOnWriteArrayList<Building> buildingArrayList, UpdateCallback updateCallback){
+        this.mainHandler = mainHandler;
         this.context = context;
         this.myPool = new ThreadPoolExecutor(5, 5,
                 10L, TimeUnit.SECONDS,
                 new LinkedBlockingQueue<Runnable>());
 
-        GpsListener GpsListener = new GpsListener(context,buildingArrayList,this);
+        GpsListener GpsListener = new GpsListener(mainHandler,context,buildingArrayList,this);
         DatabaseListener databaseListener = new DatabaseListener(buildingArrayList, updateCallback);
         myPool.execute(databaseListener);
         myPool.execute(GpsListener);
+        System.out.println(myPool.toString());
     }
 
     public ThreadPoolExecutor getMyPool(){

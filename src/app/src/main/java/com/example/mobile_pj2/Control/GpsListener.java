@@ -6,11 +6,14 @@ import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.Looper;
+import android.os.Message;
 
 import com.example.mobile_pj2.Data.Model.Building;
 import com.example.mobile_pj2.Data.Model.GeoPoint;
 import com.example.mobile_pj2.Data.UpdateCallback;
+import com.example.mobile_pj2.UI.Main.MainActivity;
 
 import java.util.Collections;
 import java.util.List;
@@ -24,8 +27,10 @@ public class GpsListener implements Runnable {
     private String provider;
     private CopyOnWriteArrayList<Building> buildingList;
     private MainController mainController;
+    private Handler handler;
 
-    public GpsListener(Context context, CopyOnWriteArrayList<Building> buildingList, MainController mainController) {
+    public GpsListener(Handler handler, Context context, CopyOnWriteArrayList<Building> buildingList, MainController mainController) {
+        this.handler = handler;
         this.context = context;
         this.buildingList = buildingList;
         this.mainController = mainController;
@@ -48,34 +53,38 @@ public class GpsListener implements Runnable {
             updateLocation(location);
         }
 
+        LocationListener locationListener  = new LocationListener(){
+
+            @Override
+            public void onLocationChanged(Location location) {
+                updateLocation(location);
+                Message message = new Message();
+                message.what = 1;
+                handler.sendMessage(message);
+            }
+
+            @Override
+            public void onStatusChanged(String s, int i, Bundle bundle) {
+
+            }
+
+            @Override
+            public void onProviderEnabled(String s) {
+
+            }
+
+            @Override
+            public void onProviderDisabled(String s) {
+
+            }
+        };
+
         Looper.prepare();
-        locationManager.requestLocationUpdates(provider, 3, 5,locationlistener);
+        locationManager.requestLocationUpdates(provider, 3, 5,locationListener);
         Looper.loop();
 
     }
 
-
-    LocationListener locationlistener = new LocationListener() {
-        @Override
-        public void onLocationChanged(Location location) {
-            updateLocation(location);
-        }
-
-        @Override
-        public void onStatusChanged(String s, int i, Bundle bundle) {
-
-        }
-
-        @Override
-        public void onProviderEnabled(String s) {
-
-        }
-
-        @Override
-        public void onProviderDisabled(String s) {
-
-        }
-    };
 
     private void updateLocation(Location location) {
         double x = location.getLongitude();
