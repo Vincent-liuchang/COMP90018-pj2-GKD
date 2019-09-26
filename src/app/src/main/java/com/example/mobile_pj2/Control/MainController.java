@@ -31,8 +31,11 @@ public class MainController {
 
         GpsListener GpsListener = new GpsListener(mainHandler,context,buildingArrayList,this);
         DatabaseListener databaseListener = new DatabaseListener(buildingArrayList, updateCallback);
+        MotionController motionController =  new MotionController(mainHandler,context);
         myPool.execute(databaseListener);
         myPool.execute(GpsListener);
+        myPool.execute(motionController);
+
         System.out.println(myPool.toString());
     }
 

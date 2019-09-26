@@ -29,16 +29,25 @@ public class MainActivity extends AppCompatActivity {
     private Context mContext = null;
     private ListView list_main = null;
     private Button button = null;
-    private  TextView textView =null;
+    private TextView textView =null;
+
+    private int motionTime = 0;
 
     public static  final int UpdateInterface = 1;
+    public static  final int UpdateMotionTime = 2;
 
     private Handler  mainHandler = new Handler(){
         public void handleMessage(Message message){
             switch(message.what){
                 case UpdateInterface:
                     refreshUI();
-                    System.out.println("received Update request");break;
+                    System.out.println("received Update request");
+                    break;
+
+                case UpdateMotionTime:
+                    motionTime += 1;
+                    System.out.println(motionTime);
+                    break;
             }
         }
     };
