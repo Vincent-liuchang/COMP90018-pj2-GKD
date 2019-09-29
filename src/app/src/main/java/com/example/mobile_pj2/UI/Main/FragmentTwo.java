@@ -12,14 +12,18 @@ import com.example.mobile_pj2.R;
 
 public class FragmentTwo extends Fragment {
     private String content;
+    private TextView textView;
     public FragmentTwo(String content) {
         this.content = content;
+    }
+    public FragmentTwo() {
+        this.content = "no building";
     }
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_two,container,false);
-        TextView txt_content = (TextView) view.findViewById(R.id.two);
-        txt_content.setText(content);
+        textView = view.findViewById(R.id.where);
+        textView.setText(content);
         return view;
     }
 }

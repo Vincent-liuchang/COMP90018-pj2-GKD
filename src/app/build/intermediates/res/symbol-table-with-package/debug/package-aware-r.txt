@@ -677,6 +677,10 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable button1
+drawable button2
+drawable button3
+drawable button4
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -712,6 +716,14 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable tab_menu_activities
+drawable tab_menu_activities1
+drawable tab_menu_bottle
+drawable tab_menu_bottle1
+drawable tab_menu_library
+drawable tab_menu_library1
+drawable tab_menu_mystate
+drawable tab_menu_mystate1
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id ALT
@@ -783,6 +795,7 @@ id barrier
 id beginning
 id blocking
 id bottom
+id building_content
 id building_name
 id building_pic
 id buttonPanel
@@ -804,7 +817,6 @@ id dimensions
 id direct
 id disableHome
 id distance
-id div_tab_bar
 id edit_query
 id end
 id expand_activities_button
@@ -908,7 +920,6 @@ id titleDividerNoCustom
 id title_template
 id top
 id topPanel
-id two
 id txt_topbar
 id unchecked
 id uniform
@@ -985,10 +996,7 @@ mipmap lawlibrary
 mipmap list_background
 mipmap list_top_bar
 mipmap msd
-mipmap tab_menu_activities
-mipmap tab_menu_bottle
-mipmap tab_menu_library
-mipmap tab_menu_mystate
+mipmap tab_bar_background
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description

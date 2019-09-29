@@ -12,8 +12,8 @@
 
         <ImageView
             android:id="@+id/txt_topbar"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:gravity="center"
             android:background="@mipmap/list_top_bar" />
@@ -28,49 +28,54 @@
     <RadioGroup
         android:id="@+id/rg_tab_bar"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="60dp"
         android:layout_alignParentBottom="true"
-        android:background="@color/white"
+        android:background="@mipmap/tab_bar_background"
         android:orientation="horizontal">
 
         <RadioButton
             android:id="@+id/rb_activities"
             style="@style/tab_menu_item"
-            android:drawableTop="@mipmap/tab_menu_activities"
-            android:text="@string/tab_menu_activities" />
+            android:paddingTop="10dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:background="#00FFFFFF"
+            android:drawableTop="@drawable/button1" />
 
         <RadioButton
             android:id="@+id/rb_library"
             style="@style/tab_menu_item"
-            android:drawableTop="@mipmap/tab_menu_library"
-            android:text="@string/tab_menu_library" />
+            android:paddingTop="10dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:background="#02FFFFFF"
+            android:drawableTop="@drawable/button2" />
 
         <RadioButton
             android:id="@+id/rb_myState"
             style="@style/tab_menu_item"
-            android:drawableTop="@mipmap/tab_menu_mystate"
-            android:text="@string/tab_menu_myState" />
+            android:paddingTop="10dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:background="#00FFFFFF"
+            android:drawableTop="@drawable/button3" />
 
         <RadioButton
             android:id="@+id/rb_bottle"
             style="@style/tab_menu_item"
-            android:drawableTop="@mipmap/tab_menu_bottle"
-            android:text="@string/tab_menu_bottle"/>
+            android:paddingTop="10dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:background="#00FFFFFF"
+            android:drawableTop="@drawable/button4" />
 
     </RadioGroup>
-
-    <View
-        android:id="@+id/div_tab_bar"
-        android:layout_width="match_parent"
-        android:layout_height="2px"
-        android:layout_above="@id/rg_tab_bar"
-        android:background="@color/white" />
 
     <FrameLayout
         android:id="@+id/fragment_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/div_tab_bar"
+        android:layout_above="@id/rg_tab_bar"
         android:layout_below="@id/ly_top_bar" />
 
 </RelativeLayout>

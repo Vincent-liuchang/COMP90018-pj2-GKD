@@ -26,12 +26,9 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
     private CopyOnWriteArrayList<Building> buildingList = null;
     private BuildingAdapter buildingAdapter = null;
     private Context mContext;
-    private FragmentOne fg1;
-    private FragmentTwo fg2,fg3,fg4;
+    private FragmentOne fg2;
+    private FragmentTwo fg1,fg3,fg4;
     public static  final int UpdateInterface = 1;
-
-    private RadioGroup rg_tab_bar;
-    private RadioButton rb_activity;
 
     @SuppressLint("HandlerLeak")
     private Handler  mainHandler = new Handler(){
@@ -39,7 +36,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
             switch(message.what){
                 case UpdateInterface:
                     refreshUI();
-                    System.out.println("received Update request");break;
+                    break;
             }
         }
     };
@@ -70,22 +67,24 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
 
     private void refreshUI(){
         buildingAdapter.update();
-        TextView textView = fg1.getView().findViewById(R.id.where);
-        for(Building building:buildingList) {
-            if(building.getInside()) {
-                textView.setText(building.getBuildingName());
-                break;
+        if(fg1 != null && fg1.getView() != null) {
+            TextView textView = fg1.getView().findViewById(R.id.where);
+            for (Building building : buildingList) {
+                if (building.getInside()) {
+                    textView.setText(building.getBuildingName());
+                    break;
+                }
+                textView.setText("No Building");
             }
-            textView.setText("No Building");
         }
     }
 
     private void bindViews(){
 
-        rg_tab_bar = findViewById(R.id.rg_tab_bar);
+        RadioGroup rg_tab_bar = findViewById(R.id.rg_tab_bar);
         rg_tab_bar.setOnCheckedChangeListener(this);
         //获取第一个单选按钮，并设置其为选中状态
-        rb_activity = findViewById(R.id.rb_activities);
+        RadioButton rb_activity = findViewById(R.id.rb_library);
         rb_activity.setChecked(true);
     }
 
@@ -108,24 +107,24 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
         switch (checkedId){
             case R.id.rb_activities:
                 if(fg1 == null){
-                    fg1 = new FragmentOne(this.buildingAdapter);
-                    getSupportFragmentManager().beginTransaction().add(R.id.fragment_content,fg1).commit();
+                    fg1 = new FragmentTwo("2");
+                    fTransaction.add(R.id.fragment_content,fg1);
                 }else{
                     fTransaction.show(fg1);
                 }
                 break;
             case R.id.rb_library:
                 if(fg2 == null){
-                    fg2 = new FragmentTwo("2");
-                    getSupportFragmentManager().beginTransaction().add(R.id.fragment_content,fg2).commit();
+                    fg2 = new FragmentOne(this.buildingAdapter);
+                    fTransaction.add(R.id.fragment_content,fg2);
                 }else{
                     fTransaction.show(fg2);
                 }
-                break;
+            break;
             case R.id.rb_myState:
                 if(fg3 == null){
                     fg3 = new FragmentTwo("3");
-                    getSupportFragmentManager().beginTransaction().add(R.id.fragment_content,fg3).commit();
+                    fTransaction.add(R.id.fragment_content,fg3);
                 }else{
                     fTransaction.show(fg3);
                 }
@@ -133,13 +132,14 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
             case R.id.rb_bottle:
                 if(fg4 == null){
                     fg4 = new FragmentTwo("4");
-                    getSupportFragmentManager().beginTransaction().add(R.id.fragment_content,fg4).commit();
+                    fTransaction.add(R.id.fragment_content,fg4);
                 }else{
                     fTransaction.show(fg4);
                 }
                 break;
         }
         fTransaction.commit();
+        refreshUI();
     }
 
     private void hideAllFragment(FragmentTransaction fragmentTransaction){

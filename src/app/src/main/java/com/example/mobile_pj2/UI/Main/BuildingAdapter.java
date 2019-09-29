@@ -62,7 +62,6 @@ public class BuildingAdapter extends BaseAdapter {
 
     public int getResource(String imageName) {
         int resId = mContext.getResources().getIdentifier(imageName, "mipmap", mContext.getPackageName());
-        System.out.println(mContext.getResources().getResourceName(R.mipmap.erc));
         return resId;
     }
 
