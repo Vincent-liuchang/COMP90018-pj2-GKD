@@ -1,6 +1,8 @@
 package com.example.mobile_pj2.Data.Model;
 
-public class GeoPoint {
+import java.io.Serializable;
+
+public class GeoPoint implements Serializable {
     public double x;
     public double y;
 

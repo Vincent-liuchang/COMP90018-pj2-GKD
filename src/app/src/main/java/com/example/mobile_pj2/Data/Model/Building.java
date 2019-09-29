@@ -1,6 +1,11 @@
 package com.example.mobile_pj2.Data.Model;
 
-public class Building implements Comparable{
+import com.example.mobile_pj2.Data.Configuration;
+import com.google.android.gms.common.internal.FallbackServiceBroker;
+
+import java.io.Serializable;
+
+public class Building implements Comparable, Serializable {
     private String buildingName;
     private int peopleInside;
     private String intro;
@@ -11,14 +16,20 @@ public class Building implements Comparable{
     private double distance;
     private boolean inside;
 
-    public Building(String buildingName, GeoPoint topLeft, GeoPoint topRight, GeoPoint bottomLeft, GeoPoint bottomRight){
+    public Building(String buildingName){
+        String coordinates = Configuration.getConfigurationValue(buildingName);
+        String[] values = coordinates.split(" ");
+
         this.buildingName = buildingName;
         this.peopleInside = 0;
         this.intro = "";
-        this.topLeft = topLeft;
-        this.topRight = topRight;
-        this.bottomLeft = bottomLeft;
-        this.bottomRight = bottomRight;
+        this.buildingName = buildingName;
+        this.peopleInside = 0;
+        this.intro = "";
+        this.topLeft = new GeoPoint(Double.valueOf(values[0].split(",")[1]), Double.valueOf(values[0].split(",")[0]));
+        this.topRight = new GeoPoint(Double.valueOf(values[1].split(",")[1]), Double.valueOf(values[1].split(",")[0]));
+        this.bottomLeft = new GeoPoint(Double.valueOf(values[2].split(",")[1]), Double.valueOf(values[2].split(",")[0]));
+        this.bottomRight = new GeoPoint(Double.valueOf(values[3].split(",")[1]), Double.valueOf(values[3].split(",")[0]));
         this.inside = false;
     }
 

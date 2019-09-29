@@ -465,6 +465,7 @@ color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
 color tooltip_background_dark
 color tooltip_background_light
+color white
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
 dimen abc_action_bar_default_height_material
@@ -783,8 +784,8 @@ id beginning
 id blocking
 id bottom
 id building_name
+id building_pic
 id buttonPanel
-id button_test
 id center_vertical
 id chains
 id checkbox
@@ -803,11 +804,13 @@ id dimensions
 id direct
 id disableHome
 id distance
+id div_tab_bar
 id edit_query
 id end
 id expand_activities_button
 id expanded_menu
 id forever
+id fragment_content
 id gone
 id group_divider
 id groups
@@ -828,6 +831,7 @@ id line3
 id listMode
 id list_item
 id list_main
+id ly_top_bar
 id message
 id middle
 id multiply
@@ -847,6 +851,11 @@ id percent
 id progress_circular
 id progress_horizontal
 id radio
+id rb_activities
+id rb_bottle
+id rb_library
+id rb_myState
+id rg_tab_bar
 id right
 id right_icon
 id right_side
@@ -899,6 +908,8 @@ id titleDividerNoCustom
 id title_template
 id top
 id topPanel
+id two
+id txt_topbar
 id unchecked
 id uniform
 id up
@@ -952,6 +963,8 @@ layout abc_tooltip
 layout activity_main
 layout building_item_list
 layout custom_dialog
+layout fragment_one
+layout fragment_two
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big
@@ -962,8 +975,20 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+mipmap baillieulibrary
+mipmap biomedicallibrary
+mipmap erc
+mipmap giblineunsonlibrary
 mipmap ic_launcher
 mipmap ic_launcher_round
+mipmap lawlibrary
+mipmap list_background
+mipmap list_top_bar
+mipmap msd
+mipmap tab_menu_activities
+mipmap tab_menu_bottle
+mipmap tab_menu_library
+mipmap tab_menu_mystate
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -1020,6 +1045,10 @@ string google_storage_bucket
 string project_id
 string search_menu_title
 string status_bar_notification_info_overflow
+string tab_menu_activities
+string tab_menu_bottle
+string tab_menu_library
+string tab_menu_myState
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog
@@ -1370,6 +1399,7 @@ style Widget_AppCompat_Toolbar
 style Widget_AppCompat_Toolbar_Button_Navigation
 style Widget_Compat_NotificationActionContainer
 style Widget_Compat_NotificationActionText
+style tab_menu_item
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth

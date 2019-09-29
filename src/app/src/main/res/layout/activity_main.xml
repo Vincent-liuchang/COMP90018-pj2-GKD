@@ -1,29 +1,76 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="@mipmap/list_background"
     tools:context=".UI.Main.MainActivity">
 
-    <Button
-        android:id="@+id/button_test"
+    <RelativeLayout
+        android:id="@+id/ly_top_bar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Button" />
+        android:layout_height="48dp">
 
-    <TextView
-        android:id="@+id/where"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="10dp"
-        android:textSize="18sp" />
+        <ImageView
+            android:id="@+id/txt_topbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:background="@mipmap/list_top_bar" />
 
-    <ListView
-    android:id="@+id/list_main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"/>
 
+    </RelativeLayout>
 
+    <RadioGroup
+        android:id="@+id/rg_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
 
-</LinearLayout>
+        <RadioButton
+            android:id="@+id/rb_activities"
+            style="@style/tab_menu_item"
+            android:drawableTop="@mipmap/tab_menu_activities"
+            android:text="@string/tab_menu_activities" />
+
+        <RadioButton
+            android:id="@+id/rb_library"
+            style="@style/tab_menu_item"
+            android:drawableTop="@mipmap/tab_menu_library"
+            android:text="@string/tab_menu_library" />
+
+        <RadioButton
+            android:id="@+id/rb_myState"
+            style="@style/tab_menu_item"
+            android:drawableTop="@mipmap/tab_menu_mystate"
+            android:text="@string/tab_menu_myState" />
+
+        <RadioButton
+            android:id="@+id/rb_bottle"
+            style="@style/tab_menu_item"
+            android:drawableTop="@mipmap/tab_menu_bottle"
+            android:text="@string/tab_menu_bottle"/>
+
+    </RadioGroup>
+
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_above="@id/rg_tab_bar"
+        android:background="@color/white" />
+
+    <FrameLayout
+        android:id="@+id/fragment_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/div_tab_bar"
+        android:layout_below="@id/ly_top_bar" />
+
+</RelativeLayout>
