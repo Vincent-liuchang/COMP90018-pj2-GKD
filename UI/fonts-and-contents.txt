@@ -1,0 +1,89 @@
+Fonts：Poppins(Regular, Medium, SemiBold, Bold)
+
+------------------------
+
+colors:
+橘色：#E46129
+青色：#53ADC7
+荧光绿色：#00D764
+文字淡紫色：#D6D7EE（某些文字是纯白色#FFFFFF 或者灰色#A19BA7）
+圆角框底色：#323561
+
+-------------------------------
+activity 1:
+
+Horizon lines
+The ambitions of a print collection
+Wed, 31 Jul 2019 - Sun, 8 Dec 2019
+Noel Shaw Gallery,
+1st Floor & Ground Floor,
+Baillieu Library
+This exhibition is staged as one of several activities 
+to celebrate the 50th anniversary of the Harold 
+Wright and Sarah and William Holmes scholarships. 
+It focuses on Northern and Italian Renaissance 
+printmakers, such as Albrecht Dürer, and Dutch 
+Republic prints, including Rembrandt, as well as the 
+etching revival.
+
+activity 2:
+
+Have your say about our libraries
+20 Aug 2019
+https://secure.insyncsurveys.com.au/surveys/MelbourneUniLCS2019/
+What do you think about our libraries on campus? Complete the survey and go in the draw to win one of five $200 vouchers. Make your voice count!
+
+-------------------------------------
+
+library infomations:
+
+Baillieu Library
+177, University of Melbourne, University Street, Parkville VIC 3053
+> Arts and Humanities
+> Noel Shaw Gallery
+> Special Collections
+
+Eastern Resource Centre
+Grattan St & Swanston St, Building 171
+> Science and Engineering
+> East Asian Collection
+> Map Collection
+
+Brownless Biomedical
+Grattan Street, Carlton
+Building 182 
+Melway 2B C7
+> Medicine, Dentistry and Health Sciences
+> Veterinary and Agriculture Sciences
+> Medical History Museum and Health Hub
+
+Law Library
+Levels 3, 4, and 5
+Melbourne Law School
+185 Pelham St, Carlton 3053
+> Law Collection
+> Rare Books Collection
+> Past Exams and Readings Online
+
+Architecture Library
+Building 133, Masson Rd, Parkville
+> Individual Architectures
+> Architecture Firms, Building Types
+> History Collection
+
+Giblin Eunson Library
+111 Barry Street
+Building 105
+> Business and Economics
+> Education Collections
+
+------------------------------------
+example bottle msgs:
+
+We're all but messages in a bottle, waiting to be found by bequeathed, before washing ashore.
+
+Happiness is letting go of what you think your life is supposed to look like and celebrating it for everything that it is! 
+
+
+
+
