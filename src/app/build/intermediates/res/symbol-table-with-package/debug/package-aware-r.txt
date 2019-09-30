@@ -427,8 +427,10 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color green
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color mainBackground
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -443,6 +445,7 @@ color material_grey_850
 color material_grey_900
 color notification_action_color_filter
 color notification_icon_bg_color
+color orange
 color primary_dark_material_dark
 color primary_dark_material_light
 color primary_material_dark
@@ -796,6 +799,7 @@ id beginning
 id blocking
 id bottom
 id building_content
+id building_intro
 id building_name
 id building_pic
 id buttonPanel
@@ -855,13 +859,17 @@ id notification_main_column
 id notification_main_column_container
 id off
 id on
+id open_time
 id packed
 id parent
 id parentPanel
 id people_count
+id people_count_back
 id percent
+id printer
 id progress_circular
 id progress_horizontal
+id question
 id radio
 id rb_activities
 id rb_bottle
@@ -915,6 +923,7 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id time
+id timer
 id title
 id titleDividerNoCustom
 id title_template
@@ -992,8 +1001,13 @@ mipmap erc
 mipmap giblineunsonlibrary
 mipmap ic_launcher
 mipmap ic_launcher_round
+mipmap icon_printer
+mipmap icon_question
+mipmap icon_timer
 mipmap lawlibrary
 mipmap list_background
+mipmap list_item_background
+mipmap list_item_people
 mipmap list_top_bar
 mipmap msd
 mipmap tab_bar_background

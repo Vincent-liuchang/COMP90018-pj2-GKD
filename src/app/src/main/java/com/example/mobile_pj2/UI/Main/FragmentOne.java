@@ -14,6 +14,7 @@ public class FragmentOne extends Fragment {
     private BuildingAdapter buildingAdapter;
     private ListView list_main = null;
 
+    public FragmentOne(){}
     public FragmentOne(BuildingAdapter buildingAdapter) {
         this.buildingAdapter = buildingAdapter;
     }

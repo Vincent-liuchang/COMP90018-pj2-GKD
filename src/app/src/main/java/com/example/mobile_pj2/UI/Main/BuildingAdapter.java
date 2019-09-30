@@ -51,10 +51,12 @@ public class BuildingAdapter extends BaseAdapter {
         TextView textView1 = view.findViewById(R.id.building_name);
         TextView textView2 = view.findViewById(R.id.people_count);
         TextView textView3 = view.findViewById(R.id.distance);
+        TextView textView4 = view.findViewById(R.id.building_intro);
         ImageView imageView = view.findViewById(R.id.building_pic);
         textView1.setText(buildingList.get(i).getBuildingName());
-        textView2.setText(Integer.toString(buildingList.get(i).getPeopleInside()));
-        textView3.setText(String.valueOf(buildingList.get(i).getDistance()));
+        textView2.setText(Integer.toString(buildingList.get(i).getPeopleInside())+"");
+        textView3.setText(Integer.toString(buildingList.get(i).getDistance())+" m");
+        textView4.setText(buildingList.get(i).getIntro());
         String name = "mipmap/"+buildingList.get(i).getBuildingName().toLowerCase();
         imageView.setImageResource(this.getResource(name));
         return view;

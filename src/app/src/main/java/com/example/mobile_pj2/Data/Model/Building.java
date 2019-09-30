@@ -13,19 +13,20 @@ public class Building implements Comparable, Serializable {
     private GeoPoint topRight;
     private GeoPoint bottomLeft;
     private GeoPoint bottomRight;
-    private double distance;
+    private int distance;
     private boolean inside;
 
     public Building(String buildingName){
         String coordinates = Configuration.getConfigurationValue(buildingName);
-        String[] values = coordinates.split(" ");
+        String[] values = coordinates.split("\t")[0].split(" ");
+        String intro = coordinates.split("\t")[1];
 
         this.buildingName = buildingName;
         this.peopleInside = 0;
         this.intro = "";
         this.buildingName = buildingName;
         this.peopleInside = 0;
-        this.intro = "";
+        this.intro = intro;
         this.topLeft = new GeoPoint(Double.valueOf(values[0].split(",")[1]), Double.valueOf(values[0].split(",")[0]));
         this.topRight = new GeoPoint(Double.valueOf(values[1].split(",")[1]), Double.valueOf(values[1].split(",")[0]));
         this.bottomLeft = new GeoPoint(Double.valueOf(values[2].split(",")[1]), Double.valueOf(values[2].split(",")[0]));
@@ -65,11 +66,11 @@ public class Building implements Comparable, Serializable {
         this.intro = intro;
     }
 
-    public void setDistance(double distance){
+    public void setDistance(int distance){
         this.distance = distance;
     }
 
-    public double getDistance() {
+    public int getDistance() {
         return distance;
     }
 
@@ -79,7 +80,8 @@ public class Building implements Comparable, Serializable {
         double y = person.y;
         double center_x = (topLeft.x+topRight.x+bottomLeft.x+bottomRight.x)/4;
         double center_y = (topLeft.y+topRight.y+bottomLeft.y+bottomRight.y)/4;
-        this.distance = Math.sqrt(Math.pow((x-center_x),2)+Math.pow((y-center_y),2))*100000;
+        double distance = Math.sqrt(Math.pow((x-center_x),2)+Math.pow((y-center_y),2))*100000;
+        this.distance = (int)distance;
     }
 
     public boolean isInside(GeoPoint person) {
