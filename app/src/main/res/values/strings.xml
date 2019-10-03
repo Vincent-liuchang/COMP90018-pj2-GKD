@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FusedLocation</string>
+    <string name="location_permission_denied">location permission denied</string>
+</resources>
