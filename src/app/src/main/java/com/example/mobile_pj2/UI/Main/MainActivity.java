@@ -7,9 +7,12 @@ import androidx.fragment.app.FragmentTransaction;
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.view.View;
+import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -18,6 +21,7 @@ import com.example.mobile_pj2.Control.MainController;
 import com.example.mobile_pj2.Data.*;
 import com.example.mobile_pj2.Data.Model.*;
 import com.example.mobile_pj2.R;
+import com.example.mobile_pj2.UI.Info.LibInfoActivity;
 
 import java.util.Timer;
 import java.util.concurrent.CopyOnWriteArrayList;
@@ -69,8 +73,6 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
 
         buildingAdapter = new BuildingAdapter(buildingList,mContext);
         bindViews();
-
-
     }
 
     private void refreshUI(){
@@ -172,7 +174,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
                 break;
             case R.id.rb_library:
                 if(fg2 == null){
-                    fg2 = new FragmentTwo(this.buildingAdapter);
+                    fg2 = new FragmentTwo(this.buildingAdapter,MainActivity.this);
                     fTransaction.add(R.id.fragment_content,fg2);
                 }else{
                     fTransaction.show(fg2);

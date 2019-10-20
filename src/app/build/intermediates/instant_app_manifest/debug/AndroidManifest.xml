@@ -32,6 +32,8 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.AppCompat.NoActionBar" >
+        <activity android:name="com.example.mobile_pj2.UI.Info.LibInfoActivity" >
+        </activity>
         <activity android:name="com.example.mobile_pj2.UI.Main.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -103,11 +105,6 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
-
-        <provider
-            android:name="com.android.tools.ir.server.InstantRunContentProvider"
-            android:authorities="com.example.mobile_pj2.com.android.tools.ir.server.InstantRunContentProvider"
-            android:multiprocess="true" />
     </application>
 
 </manifest>

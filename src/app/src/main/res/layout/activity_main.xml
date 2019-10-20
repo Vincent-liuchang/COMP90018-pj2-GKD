@@ -4,7 +4,6 @@
     android:layout_height="match_parent"
     android:background="@mipmap/list_background"
     tools:context=".UI.Main.MainActivity">
-
     <RadioGroup
         android:id="@+id/rg_tab_bar"
         android:layout_width="match_parent"

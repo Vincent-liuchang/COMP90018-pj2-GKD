@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/list_background"
+    >
+    <ImageView
+        android:id="@+id/iv_btn_1"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:background="@mipmap/info_arrow"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/info_top_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/info_top_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"/>
+
+    <RelativeLayout
+        android:id="@+id/info_ly_1"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_below="@id/info_top_bar"
+        android:background="@mipmap/info_background"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <ImageView
+            android:id="@+id/iv_lib"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@mipmap/info_baillieu">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/info_tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@+id/iv_lib"
+            android:text="">
+
+        </TextView>
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/iv_1"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/info_ly_1"
+        android:background="@mipmap/info_icon"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/iv_2"
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/info_ly_1"
+        android:layout_toRightOf="@id/iv_1"
+        android:background="@mipmap/info_flow"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp">
+    </ImageView>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/iv_2"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+    </androidx.viewpager.widget.ViewPager>
+
+</RelativeLayout>
