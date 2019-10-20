@@ -1,14 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@mipmap/state_background">
+
+    <RelativeLayout
+        android:id="@+id/my_state_top"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:background="@mipmap/state_top_bar"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/my_state_middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/my_state_top"
+        android:background="@mipmap/state_amazing"/>
+    <TextView
+        android:id="@+id/my_state_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom = "@+id/my_state_middle"
+        android:layout_centerHorizontal="true"
+        android:text="00 : 00 : 00"
+        android:textSize="60sp"/>
+
+    <ImageView
+        android:id="@+id/my_state_study_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_alignEnd="@id/my_state_middle"
+        android:layout_below="@id/my_state_middle"
+        android:textStyle="bold"
+        android:background="@mipmap/state_view_study_history" />
+
+    <TextView
+        android:id="@+id/current_at"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/my_state_middle"
+        android:layout_above="@id/where"
+        android:textStyle="bold"
+        android:text="@string/current_at"/>
 
     <TextView
         android:id="@+id/where"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="10dp"
-        android:textSize="18sp" />
+        android:layout_alignStart="@id/current_at"
+        android:layout_above="@id/state_description1"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:text="No Building"/>
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/state_description1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/where"
+        android:layout_above="@id/num_with_you"
+        android:textStyle="bold"
+        android:text="@string/state1"/>
+
+    <TextView
+        android:id="@+id/state_timeLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/state_description1"
+        android:layout_toEndOf="@id/state_description1"
+        android:layout_above="@id/num_with_you"
+        android:layout_marginStart="5dp"
+        android:textStyle="bold"
+        android:textColor="@color/green"
+        android:text="2 hour 30 minute"/>
+
+    <TextView
+        android:id="@+id/num_with_you"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/state_description1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"
+        android:text="0"/>
+
+    <TextView
+        android:id="@+id/state_description2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/num_with_you"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"
+        android:text="@string/state2"/>
+</RelativeLayout>

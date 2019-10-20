@@ -30,10 +30,12 @@ public class MainController {
                 new LinkedBlockingQueue<Runnable>());
 
         GpsListener GpsListener = new GpsListener(mainHandler,context,buildingArrayList,this);
+        AccelerometerListener accelerometerListener = new AccelerometerListener(mainHandler,context);
         DatabaseListener databaseListener = new DatabaseListener(buildingArrayList, updateCallback);
         myPool.execute(databaseListener);
         myPool.execute(GpsListener);
-        System.out.println(myPool.toString());
+        myPool.execute(accelerometerListener);
+        System.out.println("myPool Status" + myPool.toString());
     }
 
     public ThreadPoolExecutor getMyPool(){

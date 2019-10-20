@@ -4,4 +4,7 @@
     <string name="tab_menu_library">Library</string>
     <string name="tab_menu_myState">My State</string>
     <string name="tab_menu_bottle">Bottle</string>
+    <string name="current_at">Currently at:</string>
+    <string name="state1">Library will be closed in\nCarry on!</string>
+    <string name="state2">Mates are with you!</string>
 </resources>

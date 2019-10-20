@@ -12,8 +12,6 @@ import android.os.Message;
 
 import com.example.mobile_pj2.Data.Model.Building;
 import com.example.mobile_pj2.Data.Model.GeoPoint;
-import com.example.mobile_pj2.Data.UpdateCallback;
-import com.example.mobile_pj2.UI.Main.MainActivity;
 
 import java.util.Collections;
 import java.util.List;

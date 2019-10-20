@@ -811,6 +811,7 @@ id chronometer
 id collapseActionView
 id content
 id contentPanel
+id current_at
 id custom
 id customPanel
 id dark
@@ -851,12 +852,17 @@ id ly_top_bar
 id message
 id middle
 id multiply
+id my_state_middle
+id my_state_study_history
+id my_state_time
+id my_state_top
 id never
 id none
 id normal
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id num_with_you
 id off
 id on
 id open_time
@@ -907,6 +913,9 @@ id src_in
 id src_over
 id standard
 id start
+id state_description1
+id state_description2
+id state_timeLeft
 id submenuarrow
 id submit_area
 id tabMode
@@ -929,7 +938,7 @@ id titleDividerNoCustom
 id title_template
 id top
 id topPanel
-id txt_topbar
+id txt_top_bar
 id unchecked
 id uniform
 id up
@@ -1010,6 +1019,10 @@ mipmap list_item_background
 mipmap list_item_people
 mipmap list_top_bar
 mipmap msd
+mipmap state_amazing
+mipmap state_background
+mipmap state_top_bar
+mipmap state_view_study_history
 mipmap tab_bar_background
 string abc_action_bar_home_description
 string abc_action_bar_up_description
@@ -1057,6 +1070,7 @@ string common_google_play_services_wear_update_text
 string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
+string current_at
 string default_web_client_id
 string firebase_database_url
 string gcm_defaultSenderId
@@ -1066,6 +1080,8 @@ string google_crash_reporting_api_key
 string google_storage_bucket
 string project_id
 string search_menu_title
+string state1
+string state2
 string status_bar_notification_info_overflow
 string tab_menu_activities
 string tab_menu_bottle

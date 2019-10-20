@@ -4,26 +4,26 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+import android.widget.ListView;
 
 import androidx.fragment.app.Fragment;
-
 import com.example.mobile_pj2.R;
 
 public class FragmentTwo extends Fragment {
-    private String content;
-    private TextView textView;
-    public FragmentTwo(String content) {
-        this.content = content;
-    }
-    public FragmentTwo() {
-        this.content = "no building";
+
+    private BuildingAdapter buildingAdapter;
+    private ListView list_main = null;
+
+    public FragmentTwo(){}
+    public FragmentTwo(BuildingAdapter buildingAdapter) {
+        this.buildingAdapter = buildingAdapter;
     }
 
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_two,container,false);
-        textView = view.findViewById(R.id.where);
-        textView.setText(content);
+        View view = inflater.inflate(R.layout.fragment_one,container,false);
+        list_main = view.findViewById(R.id.list_main);
+        list_main.setAdapter(buildingAdapter);
         return view;
     }
 }
