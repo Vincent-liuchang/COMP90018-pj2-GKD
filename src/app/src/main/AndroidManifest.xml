@@ -30,7 +30,8 @@
 
         <activity android:name=".UI.StudyHistory.StudyHistoryActivity" />
         <activity android:name=".UI.LibraryInfo.LibInfoActivity" />
-        <activity android:name=".UI.ReceivedMessage.ReceivedMessageActivity" />
+        <activity android:name=".UI.Bottole.ReceivedMessageActivity" />
+        <activity android:name=".UI.Bottole.WriteMessage" />
 
     </application>
 

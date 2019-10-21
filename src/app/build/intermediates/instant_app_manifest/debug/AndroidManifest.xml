@@ -46,7 +46,8 @@
         </activity>
         <activity android:name="com.example.mobile_pj2.UI.StudyHistory.StudyHistoryActivity" />
         <activity android:name="com.example.mobile_pj2.UI.LibraryInfo.LibInfoActivity" />
-        <activity android:name="com.example.mobile_pj2.UI.ReceivedMessage.ReceivedMessageActivity" />
+        <activity android:name="com.example.mobile_pj2.UI.Bottole.ReceivedMessageActivity" />
+        <activity android:name="com.example.mobile_pj2.UI.Bottole.WriteMessage" />
 
         <service
             android:name="com.google.firebase.components.ComponentDiscoveryService"

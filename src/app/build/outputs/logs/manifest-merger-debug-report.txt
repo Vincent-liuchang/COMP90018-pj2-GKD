@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:2:1-37:12
-INJECTED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:2:1-37:12
-INJECTED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:2:1-37:12
-INJECTED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:2:1-37:12
+ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:2:1-38:12
 MERGED from [com.google.firebase:firebase-analytics:17.2.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/8e72419e095a74097506f79242d2376a/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-firestore:21.1.1] /Users/vincent/.gradle/caches/transforms-2/files-2.1/a505bb970c6ad3e6905bd268b62b21e7/AndroidManifest.xml:2:1-26:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/abf20c2529ba9f8aa1f68deed5189c88/AndroidManifest.xml:17:1-24:12
@@ -52,22 +52,22 @@ MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/vincent/.gradle/cache
 MERGED from [com.google.firebase:firebase-database-collection:17.0.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/ace5c80fabfd7c20558aefdd3d303f59/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.firebase:protolite-well-known-types:17.0.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/4d2572cbeb1f0cf0c6df40fb486491df/AndroidManifest.xml:2:1-11:12
 MERGED from [io.grpc:grpc-android:1.21.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/9b39edb64190ef2b9ff976e0013b1ef7/AndroidManifest.xml:2:1-13:12
-INJECTED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:2:1-37:12
-INJECTED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:2:1-37:12
-INJECTED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:2:1-37:12
+INJECTED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:2:1-38:12
 	package
 		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:4:5-37
 		INJECTED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml
-		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:2:1-37:12
+		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:2:1-38:12
 		INJECTED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml
 	xmlns:tools
 		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml
-		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:2:1-37:12
+		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:2:1-38:12
 		INJECTED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:2:11-69
@@ -110,7 +110,7 @@ ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src
 	android:name
 		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:13:22-63
 application
-ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:14:5-35:19
+ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:14:5-36:19
 MERGED from [com.google.firebase:firebase-analytics:17.2.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/8e72419e095a74097506f79242d2376a/AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-analytics:17.2.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/8e72419e095a74097506f79242d2376a/AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-firestore:21.1.1] /Users/vincent/.gradle/caches/transforms-2/files-2.1/a505bb970c6ad3e6905bd268b62b21e7/AndroidManifest.xml:16:5-24:19
@@ -193,10 +193,14 @@ activity#com.example.mobile_pj2.UI.LibraryInfo.LibInfoActivity
 ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:32:9-68
 	android:name
 		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:32:19-65
-activity#com.example.mobile_pj2.UI.ReceivedMessage.ReceivedMessageActivity
-ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:33:9-80
+activity#com.example.mobile_pj2.UI.Bottole.ReceivedMessageActivity
+ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:33:9-72
 	android:name
-		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:33:19-77
+		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:33:19-69
+activity#com.example.mobile_pj2.UI.Bottole.WriteMessage
+ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:34:9-61
+	android:name
+		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:34:19-58
 uses-sdk
 INJECTED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml

@@ -7,10 +7,10 @@
 
     <ImageView
         android:id="@+id/arrow"
-        android:layout_width="35dp"
-        android:layout_height="25dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="24dp"
         android:background="@mipmap/icon_back" />
 
 
@@ -26,7 +26,7 @@
         android:background="@mipmap/message_great"
         android:textStyle="bold" />
 
-    <EditText
+    <TextView
         android:id="@+id/bottle_message_received"
         android:layout_width="match_parent"
         android:layout_height="220dp"
@@ -34,11 +34,9 @@
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="60dp"
         android:layout_marginTop="200dp"
-        android:layout_marginBottom="-308dp"
-        android:background="@mipmap/bottle_middle"
+        android:background="@mipmap/bottle_middle_transparent"
         android:gravity="top|left"
-        android:hint="Say something to others. You are well come,"
-        android:lineSpacingMultiplier="1.8"
+        android:lineSpacingMultiplier="1.9"
         android:paddingLeft="15dp"
         android:paddingTop="15dp"
         android:paddingRight="15dp"

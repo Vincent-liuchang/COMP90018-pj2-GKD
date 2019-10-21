@@ -48,15 +48,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b990d1d5-728f-42b0-8fad-f6b892baf32a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mobile_pj2/UI/Main/FragementOne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mobile_pj2/UI/Main/FragmentFour.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mobile_pj2/UI/Main/MainViewPagerAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mobile_pj2/UI/ReceivedMessage/ReceivedMessageActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/act_view_page_item.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragement_four.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_one.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/message_received.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UI/drawable/Library-Info/drawable-xxxhdpi/组 703.png" beforeDir="false" afterPath="$PROJECT_DIR$/../UI/drawable/Library-Info/drawable-xxxhdpi/组 703.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mobile_pj2/Control/VibrationListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mobile_pj2/UI/Bottole/ReceivedMessageActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mobile_pj2/UI/Bottole/WriteMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/no_message.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/write_message.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -82,7 +78,6 @@
       <change beforePath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/com/google/android/gms/base/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/com/google/android/gms/base/R.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/com/google/firebase/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/com/google/firebase/R.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/com/google/firebase/firestore/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/com/google/firebase/firestore/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/debug.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/debug.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/build-info/debug/build-info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/build-info/debug/build-info.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/bundle_manifest/debug/processDebugManifest/bundle-manifest/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/bundle_manifest/debug/processDebugManifest/bundle-manifest/AndroidManifest.xml" afterDir="false" />
@@ -119,14 +114,18 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/mobile_pj2/R$string.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/mobile_pj2/R$string.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/mobile_pj2/R$style.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/mobile_pj2/R$style.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/mobile_pj2/R$styleable.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/mobile_pj2/R$styleable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/mobile_pj2/UI/LibraryInfo/InfoViewPagerAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/mobile_pj2/UI/LibraryInfo/InfoViewPagerAdapter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/mobile_pj2/UI/LibraryInfo/LibInfoActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/mobile_pj2/UI/LibraryInfo/LibInfoActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/mobile_pj2/UI/LibraryInfo/ViewPagerAdapter.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/mobile_pj2/UI/Main/BuildingAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/mobile_pj2/UI/Main/BuildingAdapter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/mobile_pj2/UI/Main/FragmentFour$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/mobile_pj2/UI/Main/FragmentFour$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/mobile_pj2/UI/Main/FragmentFour$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/mobile_pj2/UI/Main/FragmentFour$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/mobile_pj2/UI/Main/FragmentFour.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/mobile_pj2/UI/Main/FragmentFour.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/mobile_pj2/UI/Main/FragmentThree.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/mobile_pj2/UI/Main/FragmentThree.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/mobile_pj2/UI/Main/FragmentTwo.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/mobile_pj2/UI/Main/FragmentTwo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/mobile_pj2/UI/Main/MainActivity$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/mobile_pj2/UI/Main/MainActivity$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/mobile_pj2/UI/Main/MainActivity$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/mobile_pj2/UI/Main/MainActivity$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/mobile_pj2/UI/Main/MainActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/mobile_pj2/UI/Main/MainActivity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/mobile_pj2/UI/ReceivedMessage/ReceivedMessageActivity.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/mobile_pj2/UI/StudyHistory/StudyHistoryActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/mobile_pj2/UI/StudyHistory/StudyHistoryActivity.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/mobile_pj2/UI/StudyHistory/StudyHistoryAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/mobile_pj2/UI/StudyHistory/StudyHistoryAdapter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/google/android/gms/base/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/google/android/gms/base/R$id.class" afterDir="false" />
@@ -188,14 +187,18 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/mobile_pj2/R$string.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/mobile_pj2/R$string.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/mobile_pj2/R$style.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/mobile_pj2/R$style.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/mobile_pj2/R$styleable.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/mobile_pj2/R$styleable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/mobile_pj2/UI/LibraryInfo/InfoViewPagerAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/mobile_pj2/UI/LibraryInfo/InfoViewPagerAdapter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/mobile_pj2/UI/LibraryInfo/LibInfoActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/mobile_pj2/UI/LibraryInfo/LibInfoActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/mobile_pj2/UI/LibraryInfo/ViewPagerAdapter.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/mobile_pj2/UI/Main/BuildingAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/mobile_pj2/UI/Main/BuildingAdapter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/mobile_pj2/UI/Main/FragmentFour$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/mobile_pj2/UI/Main/FragmentFour$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/mobile_pj2/UI/Main/FragmentFour$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/mobile_pj2/UI/Main/FragmentFour$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/mobile_pj2/UI/Main/FragmentFour.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/mobile_pj2/UI/Main/FragmentFour.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/mobile_pj2/UI/Main/FragmentThree.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/mobile_pj2/UI/Main/FragmentThree.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/mobile_pj2/UI/Main/FragmentTwo.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/mobile_pj2/UI/Main/FragmentTwo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/mobile_pj2/UI/Main/MainActivity$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/mobile_pj2/UI/Main/MainActivity$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/mobile_pj2/UI/Main/MainActivity$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/mobile_pj2/UI/Main/MainActivity$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/mobile_pj2/UI/Main/MainActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/mobile_pj2/UI/Main/MainActivity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/mobile_pj2/UI/ReceivedMessage/ReceivedMessageActivity.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/mobile_pj2/UI/StudyHistory/StudyHistoryActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/mobile_pj2/UI/StudyHistory/StudyHistoryActivity.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/mobile_pj2/UI/StudyHistory/StudyHistoryAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/mobile_pj2/UI/StudyHistory/StudyHistoryAdapter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/google/android/gms/base/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/google/android/gms/base/R$id.class" afterDir="false" />
@@ -207,29 +210,12 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/manifest-checker/debug/manifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/manifest-checker/debug/manifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_lib_info.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_lib_info.xml.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_view_page_item.xml.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_info_baillieulibrary.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_info_baillieulibrary.png.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_info_biomedicallibrary.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_info_biomedicallibrary.png.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_info_erc.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_info_erc.png.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_info_giblineunsonlibrary.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_info_giblineunsonlibrary.png.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_info_lawlibrary.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_info_lawlibrary.png.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_info_msd.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_info_msd.png.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_info_sta_1.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_info_sta_1.png.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_info_sta_2.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_info_sta_2.png.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_info_sta_3.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_info_sta_3.png.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_info_sta_4.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_info_sta_4.png.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_info_sta_5.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_info_sta_5.png.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_info_sta_6.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_info_sta_6.png.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_info_sta_7.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_info_sta_7.png.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_fragement_four.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_fragement_four.xml.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_message_received.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_message_received.xml.flat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/resources/instant-run/debug/resources-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/resources/instant-run/debug/resources-debug.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_0.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_0.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_1.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_1.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_2.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_2.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_3.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_3.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_4.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_4.apk" afterDir="false" />
@@ -257,18 +243,9 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/76/com/google/firebase/firestore/R$layout.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/76/com/google/firebase/firestore/R$layout.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/77/androidx/legacy/coreutils/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/77/androidx/legacy/coreutils/R$id.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/77/androidx/legacy/coreutils/R$layout.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/77/androidx/legacy/coreutils/R$layout.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/77/com/example/mobile_pj2/UI/ReceivedMessage/ReceivedMessageActivity.dex" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/78/androidx/appcompat/resources/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/78/androidx/appcompat/resources/R$id.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/78/androidx/appcompat/resources/R$layout.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/78/androidx/appcompat/resources/R$layout.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/78/com/example/mobile_pj2/Data/Configuration.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/78/com/example/mobile_pj2/Data/Configuration.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/78/com/example/mobile_pj2/Data/DataManager$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/78/com/example/mobile_pj2/Data/DataManager$1.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/78/com/example/mobile_pj2/Data/DataManager$2.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/78/com/example/mobile_pj2/Data/DataManager$2.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/78/com/example/mobile_pj2/Data/DataManager$3.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/78/com/example/mobile_pj2/Data/DataManager$3.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/78/com/example/mobile_pj2/Data/DataManager$4.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/78/com/example/mobile_pj2/Data/DataManager$4.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/78/com/example/mobile_pj2/Data/DataManager.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/78/com/example/mobile_pj2/Data/DataManager.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/78/com/example/mobile_pj2/Data/Model/Building.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/78/com/example/mobile_pj2/Data/Model/Building.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/78/com/example/mobile_pj2/Data/Model/GeoPoint.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/78/com/example/mobile_pj2/Data/Model/GeoPoint.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/78/com/example/mobile_pj2/UI/StudyHistory/StudyHistoryActivity$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/78/com/example/mobile_pj2/UI/StudyHistory/StudyHistoryActivity$1.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/78/com/example/mobile_pj2/UI/StudyHistory/StudyHistoryActivity$2.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/78/com/example/mobile_pj2/UI/StudyHistory/StudyHistoryActivity$2.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/78/com/example/mobile_pj2/UI/StudyHistory/StudyHistoryActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/78/com/example/mobile_pj2/UI/StudyHistory/StudyHistoryActivity.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/78/com/example/mobile_pj2/UI/StudyHistory/StudyHistoryAdapter.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/78/com/example/mobile_pj2/UI/StudyHistory/StudyHistoryAdapter.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/79/androidx/fragment/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/79/androidx/fragment/R$id.dex" afterDir="false" />
@@ -277,13 +254,13 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/80/androidx/core/R$layout.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/80/androidx/core/R$layout.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/80/androidx/vectordrawable/animated/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/80/androidx/vectordrawable/animated/R$id.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/80/androidx/vectordrawable/animated/R$layout.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/80/androidx/vectordrawable/animated/R$layout.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/80/com/example/mobile_pj2/UI/LibraryInfo/LibInfoActivity$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/80/com/example/mobile_pj2/UI/LibraryInfo/LibInfoActivity$1.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/80/com/example/mobile_pj2/UI/LibraryInfo/InfoViewPagerAdapter.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/80/com/example/mobile_pj2/UI/LibraryInfo/InfoViewPagerAdapter.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/80/com/example/mobile_pj2/UI/LibraryInfo/LibInfoActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/80/com/example/mobile_pj2/UI/LibraryInfo/LibInfoActivity.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/80/com/example/mobile_pj2/UI/LibraryInfo/ViewPagerAdapter.dex" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/80/com/example/mobile_pj2/UI/Main/BuildingAdapter.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/80/com/example/mobile_pj2/UI/Main/BuildingAdapter.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/80/com/example/mobile_pj2/UI/Main/FragmentThree$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/80/com/example/mobile_pj2/UI/Main/FragmentThree$1.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/80/com/example/mobile_pj2/UI/Main/FragmentFour$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/80/com/example/mobile_pj2/UI/Main/FragmentFour$1.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/80/com/example/mobile_pj2/UI/Main/FragmentFour$2.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/80/com/example/mobile_pj2/UI/Main/FragmentFour$2.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/80/com/example/mobile_pj2/UI/Main/FragmentFour.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/80/com/example/mobile_pj2/UI/Main/FragmentFour.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/80/com/example/mobile_pj2/UI/Main/FragmentThree.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/80/com/example/mobile_pj2/UI/Main/FragmentThree.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/80/com/example/mobile_pj2/UI/Main/FragmentTwo$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/80/com/example/mobile_pj2/UI/Main/FragmentTwo$1.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/80/com/example/mobile_pj2/UI/Main/FragmentTwo.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/80/com/example/mobile_pj2/UI/Main/FragmentTwo.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/80/com/example/mobile_pj2/UI/Main/MainActivity$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/80/com/example/mobile_pj2/UI/Main/MainActivity$1.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/80/com/example/mobile_pj2/UI/Main/MainActivity$2.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/80/com/example/mobile_pj2/UI/Main/MainActivity$2.dex" afterDir="false" />
@@ -292,14 +269,6 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/80/com/google/firebase/R$layout.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/80/com/google/firebase/R$layout.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/androidx/customview/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/androidx/customview/R$id.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/androidx/customview/R$layout.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/androidx/customview/R$layout.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/example/mobile_pj2/BuildConfig.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/example/mobile_pj2/BuildConfig.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/example/mobile_pj2/Control/AccelerometerListener.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/example/mobile_pj2/Control/AccelerometerListener.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/example/mobile_pj2/Control/DatabaseListener.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/example/mobile_pj2/Control/DatabaseListener.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/example/mobile_pj2/Control/FusedLocationListener$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/example/mobile_pj2/Control/FusedLocationListener$1.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/example/mobile_pj2/Control/FusedLocationListener.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/example/mobile_pj2/Control/FusedLocationListener.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/example/mobile_pj2/Control/LocalTimeSaveTask.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/example/mobile_pj2/Control/LocalTimeSaveTask.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/example/mobile_pj2/Control/MainController.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/example/mobile_pj2/Control/MainController.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/example/mobile_pj2/Control/SubmitTask.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/example/mobile_pj2/Control/SubmitTask.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/example/mobile_pj2/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/example/mobile_pj2/R$id.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/example/mobile_pj2/R$integer.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/example/mobile_pj2/R$integer.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/example/mobile_pj2/R$interpolator.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/example/mobile_pj2/R$interpolator.dex" afterDir="false" />
@@ -308,7 +277,6 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/example/mobile_pj2/R$string.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/example/mobile_pj2/R$string.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/example/mobile_pj2/R$style.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/example/mobile_pj2/R$style.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/example/mobile_pj2/R$styleable.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/81/com/example/mobile_pj2/R$styleable.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/__content__.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/__content__.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/2/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/2/classes.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/3/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/3/classes.dex" afterDir="false" />
@@ -318,7 +286,6 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/7/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/7/classes.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/8/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/8/classes.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/9/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/9/classes.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/__content__.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/__content__.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/androidx/activity/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/androidx/activity/R$id.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/androidx/activity/R$layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/androidx/activity/R$layout.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/androidx/appcompat/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/androidx/appcompat/R$id.class" afterDir="false" />
@@ -344,22 +311,6 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/androidx/vectordrawable/animated/R$layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/androidx/vectordrawable/animated/R$layout.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/androidx/viewpager/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/androidx/viewpager/R$id.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/androidx/viewpager/R$layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/androidx/viewpager/R$layout.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/BuildConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/BuildConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/Control/AccelerometerListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/Control/AccelerometerListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/Control/DatabaseListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/Control/DatabaseListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/Control/FusedLocationListener$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/Control/FusedLocationListener$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/Control/FusedLocationListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/Control/FusedLocationListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/Control/LocalTimeSaveTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/Control/LocalTimeSaveTask.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/Control/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/Control/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/Control/SubmitTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/Control/SubmitTask.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/Data/Configuration.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/Data/Configuration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/Data/DataManager$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/Data/DataManager$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/Data/DataManager$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/Data/DataManager$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/Data/DataManager$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/Data/DataManager$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/Data/DataManager$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/Data/DataManager$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/Data/DataManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/Data/DataManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/Data/Model/Building.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/Data/Model/Building.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/Data/Model/GeoPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/Data/Model/GeoPoint.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/R$id.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/R$integer.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/R$integer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/R$interpolator.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/R$interpolator.class" afterDir="false" />
@@ -368,19 +319,18 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/R$string.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/R$string.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/R$style.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/R$style.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/R$styleable.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/R$styleable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/UI/LibraryInfo/LibInfoActivity$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/UI/LibraryInfo/LibInfoActivity$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/UI/LibraryInfo/InfoViewPagerAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/UI/LibraryInfo/InfoViewPagerAdapter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/UI/LibraryInfo/LibInfoActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/UI/LibraryInfo/LibInfoActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/UI/LibraryInfo/ViewPagerAdapter.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/UI/Main/BuildingAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/UI/Main/BuildingAdapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/UI/Main/FragmentThree$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/UI/Main/FragmentThree$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/UI/Main/FragmentFour$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/UI/Main/FragmentFour$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/UI/Main/FragmentFour$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/UI/Main/FragmentFour$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/UI/Main/FragmentFour.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/UI/Main/FragmentFour.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/UI/Main/FragmentThree.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/UI/Main/FragmentThree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/UI/Main/FragmentTwo$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/UI/Main/FragmentTwo$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/UI/Main/FragmentTwo.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/UI/Main/FragmentTwo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/UI/Main/MainActivity$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/UI/Main/MainActivity$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/UI/Main/MainActivity$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/UI/Main/MainActivity$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/UI/Main/MainActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/UI/Main/MainActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/UI/StudyHistory/StudyHistoryActivity$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/UI/StudyHistory/StudyHistoryActivity$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/UI/StudyHistory/StudyHistoryActivity$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/UI/StudyHistory/StudyHistoryActivity$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/UI/ReceivedMessage/ReceivedMessageActivity.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/UI/StudyHistory/StudyHistoryActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/UI/StudyHistory/StudyHistoryActivity.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/UI/StudyHistory/StudyHistoryAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/mobile_pj2/UI/StudyHistory/StudyHistoryAdapter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/google/android/gms/base/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/google/android/gms/base/R$id.class" afterDir="false" />
@@ -388,32 +338,14 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/google/firebase/R$layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/google/firebase/R$layout.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/google/firebase/firestore/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/google/firebase/firestore/R$id.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/google/firebase/firestore/R$layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/google/firebase/firestore/R$layout.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJavaRes/debug/__content__.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJavaRes/debug/__content__.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/__content__.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/__content__.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mobile_pj2/UI/LibraryInfo/LibInfoActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mobile_pj2/UI/LibraryInfo/LibInfoActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mobile_pj2/UI/LibraryInfo/ViewPagerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mobile_pj2/UI/LibraryInfo/InfoViewPagerAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mobile_pj2/UI/Main/FragmentFour.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mobile_pj2/UI/Main/FragmentFour.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mobile_pj2/UI/Main/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mobile_pj2/UI/Main/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/lib_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/lib_info.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_page_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/info_view_page_item.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/info_baillieulibrary.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/info_baillieulibrary.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/info_biomedicallibrary.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/info_biomedicallibrary.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/info_erc.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/info_erc.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/info_giblineunsonlibrary.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/info_giblineunsonlibrary.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/info_lawlibrary.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/info_lawlibrary.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/info_msd.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/info_msd.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/info_sta_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/info_sta_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/info_sta_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/info_sta_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/info_sta_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/info_sta_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/info_sta_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/info_sta_4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/info_sta_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/info_sta_5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/info_sta_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/info_sta_6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/info_sta_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/info_sta_7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mobile_pj2/UI/ReceivedMessage/ReceivedMessageActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragement_four.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragement_four.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/message_received.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/message_received.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -435,15 +367,127 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mobile_pj2/UI/Bottole/ReceivedMessageActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1169#1417#0" expanded="true" />
+                <element signature="e#1416#1417#0" expanded="true" />
+                <element signature="e#1466#1608#0" expanded="true" />
+                <element signature="e#1607#1608#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/write_message.xml">
+          <provider editor-type-id="android-designer2" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="61">
+              <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/lib_info.xml">
+          <provider editor-type-id="android-designer2" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="33" column="21" selection-start-line="7" selection-start-column="3" selection-end-line="33" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/message_received.xml">
+          <provider editor-type-id="android-designer2" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="43" column="34" lean-forward="true" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mobile_pj2/UI/Bottole/WriteMessage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="59" column="44" selection-start-line="59" selection-start-column="44" selection-end-line="59" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1365#1589#0" expanded="true" />
+                <element signature="e#1588#1589#0" expanded="true" />
+                <element signature="e#2174#2320#0" expanded="true" />
+                <element signature="e#2319#2320#0" expanded="true" />
+                <element signature="e#2356#2498#0" expanded="true" />
+                <element signature="e#2497#2498#0" expanded="true" />
+                <element signature="e#2541#2542#0" expanded="true" />
+                <element signature="e#2577#2578#0" expanded="true" />
+                <element signature="e#2613#2614#0" expanded="true" />
+                <element signature="e#2650#2651#0" expanded="true" />
+                <element signature="e#2698#2699#0" expanded="true" />
+                <element signature="e#2738#2739#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/no_message.xml">
+          <provider editor-type-id="android-designer2" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/studyhistory_item_list.xml">
+          <provider editor-type-id="android-designer2" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mobile_pj2/UI/Main/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2513">
+              <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mobile_pj2/Control/VibrationListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-966">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="resourceFile" />
         <option value="layoutResourceFile" />
-        <option value="Class" />
         <option value="layoutResourceFile_vertical" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -468,13 +512,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mobile_pj2/Control/SubmitTask.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mobile_pj2/Control/DatabaseListener.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mobile_pj2/Data/Model/GeoPoint.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mobile_pj2/Data/Configuration.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mobile_pj2/UI/Main/fragmentOne.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/button1.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/button1.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/button2.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/button3.xml" />
@@ -506,19 +543,26 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_two.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/building_item_list.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/mobile_pj2/UI/Main/FragmentTwo.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mobile_pj2/UI/ReceivedMessage/ReceivedMessageActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragement_four.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/message_received.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mobile_pj2/UI/Main/FragmentFour.java" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/mobile_pj2/UI/LibraryInfo/ViewPagerAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_one.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/act_view_page_item.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/mobile_pj2/UI/Main/FragementOne.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/mobile_pj2/UI/Main/MainViewPagerAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mobile_pj2/UI/Main/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/mobile_pj2/Control/MainController.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/lib_info.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragement_four.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mobile_pj2/UI/ReceivedMessage/ReceivedMessageActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mobile_pj2/UI/ReceivedMessage/WriteMessage.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mobile_pj2/UI/Main/FragmentFour.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mobile_pj2/Control/VibrationHelper.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mobile_pj2/Control/VibrationListener.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mobile_pj2/UI/Main/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mobile_pj2/UI/Bottole/ReceivedMessageActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mobile_pj2/UI/Bottole/WriteMessage.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/message_received.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/write_message.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/no_message.xml" />
       </list>
     </option>
   </component>
@@ -591,6 +635,14 @@
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="mobile_pj2" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="UI" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="src" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="mobile_pj2" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="UI" type="462c0819:PsiDirectoryNode" />
+              <item name="Bottole" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="src" type="1abcf292:AndroidViewProjectNode" />
@@ -906,7 +958,7 @@
       <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.29399142" side_tool="true" visible="true" weight="0.36099586" />
       <window_info anchor="bottom" id="Build" order="5" sideWeight="0.7632332" weight="0.32918397" />
       <window_info anchor="bottom" id="Android Profiler" order="6" sideWeight="0.4985694" weight="0.32777777" />
-      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.7060086" visible="true" weight="0.36099586" />
+      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.7060086" weight="0.36099586" />
       <window_info anchor="bottom" id="Debug" order="8" />
       <window_info anchor="bottom" id="Find" order="9" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
@@ -914,7 +966,7 @@
       <window_info anchor="right" id="Gradle" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="right" id="Preview" order="5" />
+      <window_info anchor="right" id="Preview" order="5" visible="true" weight="0.3297568" />
       <window_info anchor="right" id="Assistant" order="6" weight="0.3297568" />
       <window_info anchor="right" id="Coverage" order="7" side_tool="true" weight="0.3297568" />
     </layout>
@@ -960,45 +1012,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mobile_pj2/Control/DatabaseListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-29/android.jar!/android/annotation/SuppressLint.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-29/android.jar!/android/widget/BaseAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
-          <folding>
-            <element signature="e#789#790#0" expanded="true" />
-            <element signature="e#840#841#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-29/android.jar!/java/util/Timer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="48" column="16" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
-          <folding>
-            <element signature="e#1243#1244#0" expanded="true" />
-            <element signature="e#1294#1295#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-29/android.jar!/android/hardware/SensorManager.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
@@ -1134,14 +1147,6 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/studyhistory_item_list.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_studyhistory.xml">
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
@@ -1219,34 +1224,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mobile_pj2/UI/ReceivedMessage/ReceivedMessageActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#697#698#0" expanded="true" />
-            <element signature="e#766#767#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragement_four.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="32" column="75" selection-start-line="32" selection-start-column="75" selection-end-line="32" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/info_sta_3.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -1257,14 +1234,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/message_received.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="28" column="13" lean-forward="true" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mobile_pj2/UI/LibraryInfo/InfoViewPagerAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1272,16 +1241,6 @@
           <folding>
             <element signature="e#822#823#0" expanded="true" />
             <element signature="e#858#859#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mobile_pj2/UI/Main/FragmentFour.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="41" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1318,16 +1277,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mobile_pj2/UI/Main/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="74" column="32" selection-start-line="74" selection-start-column="32" selection-end-line="74" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_three.xml">
       <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor">
@@ -1348,14 +1297,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="68" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/lib_info.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="52" column="43" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -1402,6 +1343,131 @@
             <element signature="e#621#622#0" expanded="true" />
             <element signature="e#645#646#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragement_four.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="40" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mobile_pj2/UI/Main/FragmentFour.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#760#761#0" expanded="true" />
+            <element signature="e#798#799#0" expanded="true" />
+            <element signature="e#1141#1368#0" expanded="true" />
+            <element signature="e#1367#1368#0" expanded="true" />
+            <element signature="e#1414#1651#0" expanded="true" />
+            <element signature="e#1650#1651#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mobile_pj2/Control/VibrationListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-966">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mobile_pj2/UI/Main/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2513">
+          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="24" column="68" lean-forward="true" selection-start-line="24" selection-start-column="68" selection-end-line="24" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/lib_info.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="33" column="21" selection-start-line="7" selection-start-column="3" selection-end-line="33" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mobile_pj2/UI/Bottole/ReceivedMessageActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1169#1417#0" expanded="true" />
+            <element signature="e#1416#1417#0" expanded="true" />
+            <element signature="e#1466#1608#0" expanded="true" />
+            <element signature="e#1607#1608#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mobile_pj2/UI/Bottole/WriteMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="59" column="44" selection-start-line="59" selection-start-column="44" selection-end-line="59" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1365#1589#0" expanded="true" />
+            <element signature="e#1588#1589#0" expanded="true" />
+            <element signature="e#2174#2320#0" expanded="true" />
+            <element signature="e#2319#2320#0" expanded="true" />
+            <element signature="e#2356#2498#0" expanded="true" />
+            <element signature="e#2497#2498#0" expanded="true" />
+            <element signature="e#2541#2542#0" expanded="true" />
+            <element signature="e#2577#2578#0" expanded="true" />
+            <element signature="e#2613#2614#0" expanded="true" />
+            <element signature="e#2650#2651#0" expanded="true" />
+            <element signature="e#2698#2699#0" expanded="true" />
+            <element signature="e#2738#2739#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/studyhistory_item_list.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/write_message.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/no_message.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/message_received.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="43" column="34" lean-forward="true" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
         </state>
       </provider>
     </entry>

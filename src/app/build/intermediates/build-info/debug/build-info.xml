@@ -6,7 +6,7 @@
     density="420dpi"
     format="10"
     plugin-version="3.4.2"
-    timestamp="1571648140088"
+    timestamp="1571651408908"
     token="2060656808879340209"
     verifier="FULL_BUILD_REQUESTED" >
 
@@ -18,22 +18,13 @@
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="117" />
+        duration="0" />
     <task
         name="verifier"
         duration="0" />
 
     <artifact
         location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
         type="SPLIT" />
     <artifact
         location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
@@ -57,6 +48,15 @@
         location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
         type="SPLIT" />
     <artifact
+        location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+        type="SPLIT" />
+    <artifact
         location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
         type="SPLIT" />
     <artifact
@@ -65,19 +65,10 @@
 
     <build
         build-mode="FULL"
-        timestamp="1571648140088"
+        timestamp="1571651408908"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
         <artifact
             location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
@@ -99,6 +90,15 @@
             type="SPLIT" />
         <artifact
             location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
             type="SPLIT" />
         <artifact
             location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/split-apk/debug/slices/slice_7.apk"

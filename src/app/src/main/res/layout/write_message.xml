@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/list_background">
+
+    <RelativeLayout
+        android:id="@+id/bottle_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <ImageView
+            android:id="@+id/bottle_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:background="@mipmap/icon_back" />
+
+        <ImageView
+            android:id="@+id/bottle_top_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/bottle_top_bar" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id = "@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bottle_top_bar"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="35dp"
+        android:text="Type your message here: "
+        android:textStyle="bold"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/bottle_message"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_below="@id/type"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:paddingTop="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+
+        android:background="@mipmap/bottle_middle"
+        android:gravity="top|left"
+        android:selectAllOnFocus="true"
+        android:singleLine="false"
+        android:textSize="16sp"
+        android:lineSpacingMultiplier="1.9"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/bottle_throw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bottle_message"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:background="@mipmap/bottle_throw"
+        android:clickable="true"
+        android:gravity="center" />
+
+    <ImageView
+        android:id = "@+id/bottle_shake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bottle_throw"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@mipmap/bottle_shake"
+        android:gravity="center" />
+</RelativeLayout>

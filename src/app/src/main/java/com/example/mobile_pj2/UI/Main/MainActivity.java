@@ -6,14 +6,11 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
-import android.app.Service;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -41,11 +38,10 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
     public static final int UpdateInterface = 1;
     public static final int StartTimmer = 2;
     public static final int PauseTimmer = 3;
-    public static final int Vibrator = 4;
 
     private long startTime = 0;
     private String currentBuilding;
-    private static MainController mainController;
+    public static MainController mainController;
 
     @SuppressLint("HandlerLeak")
     private Handler  mainHandler = new Handler(){
@@ -57,8 +53,6 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
                     startTimer();break;
                 case PauseTimmer:
                     clearTimer();break;
-                case Vibrator:
-                    Vibrate(1000);
             }
         }
     };
@@ -168,26 +162,6 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
         int a[] = {hours,minutes,seconds};
         return a;
     }
-
-    public void Vibrate(long milliseconds) {
-        if(fg4 != null && fg4.getView() != null) {
-            android.os.Vibrator vibrator = (android.os.Vibrator) this
-                    .getSystemService(Service.VIBRATOR_SERVICE);
-
-            if (fg4.getMyMessage() != null) {
-                vibrator.vibrate(milliseconds);
-                EditText editText = fg4.getEditText();
-                editText.setText(null);
-                fg4.setMyMessage(null);
-                ImageView im = findViewById(R.id.bottle_shake);
-            }
-            else {
-            }
-
-        }
-
-    }
-
 
     private void bindViews(){
         RadioGroup rg_tab_bar = findViewById(R.id.rg_tab_bar);
