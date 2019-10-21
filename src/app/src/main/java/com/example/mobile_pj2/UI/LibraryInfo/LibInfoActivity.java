@@ -35,8 +35,8 @@ public class LibInfoActivity extends AppCompatActivity {
             }
         });
         viewPager = findViewById(R.id.info_viewPager);
-        ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(this);
-        viewPager.setAdapter(viewPagerAdapter);
+        InfoViewPagerAdapter infoViewPagerAdapter = new InfoViewPagerAdapter(this);
+        viewPager.setAdapter(infoViewPagerAdapter);
 
         String name = "mipmap/"+"info_"+buildingName.toLowerCase();
         imageView_intro.setImageResource(this.getResource(name));

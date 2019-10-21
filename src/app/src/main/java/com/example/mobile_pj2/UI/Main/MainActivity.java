@@ -6,11 +6,14 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
+import android.app.Service;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -31,14 +34,18 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
     private CopyOnWriteArrayList<Building> buildingList = null;
     private BuildingAdapter buildingAdapter = null;
     private Context mContext;
+    private FragementOne fg1;
     private FragmentTwo fg2;
-    private FragmentThree fg1,fg3,fg4;
+    private FragmentThree fg3;
+    private FragmentFour fg4;
     public static final int UpdateInterface = 1;
     public static final int StartTimmer = 2;
     public static final int PauseTimmer = 3;
+    public static final int Vibrator = 4;
+
     private long startTime = 0;
     private String currentBuilding;
-    private MainController mainController;
+    private static MainController mainController;
 
     @SuppressLint("HandlerLeak")
     private Handler  mainHandler = new Handler(){
@@ -50,6 +57,8 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
                     startTimer();break;
                 case PauseTimmer:
                     clearTimer();break;
+                case Vibrator:
+                    Vibrate(1000);
             }
         }
     };
@@ -113,7 +122,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
             long timePast = (System.currentTimeMillis()- startTime)/1000;
             int time0[] = transformTime(timePast);
             int time1[] = transformTime(System.currentTimeMillis()/1000);
-            time1[0] = Math.max(20 + 24 - time1[0],0);
+            time1[0] = Math.max(8 - time1[0],0);
             time1[1] = 60 - time1[1];
             TextView textView_time = fg3.getView().findViewById(R.id.my_state_time);
             TextView textView_timeLeft = fg3.getView().findViewById(R.id.state_timeLeft);
@@ -145,7 +154,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
 
         if(fg3 != null && fg3.getView() != null) {
             int time1[] = transformTime(currentTime/1000);
-            time1[0] = Math.max(20 + 24 - time1[0],0);
+            time1[0] = Math.max(8 - time1[0],0);
             time1[1] = 60 - time1[1];
             TextView textView_timeLeft = fg3.getView().findViewById(R.id.state_timeLeft);
             textView_timeLeft.setText(time1[0] + " hour " + time1[1] + " minute");
@@ -159,6 +168,26 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
         int a[] = {hours,minutes,seconds};
         return a;
     }
+
+    public void Vibrate(long milliseconds) {
+        if(fg4 != null && fg4.getView() != null) {
+            android.os.Vibrator vibrator = (android.os.Vibrator) this
+                    .getSystemService(Service.VIBRATOR_SERVICE);
+
+            if (fg4.getMyMessage() != null) {
+                vibrator.vibrate(milliseconds);
+                EditText editText = fg4.getEditText();
+                editText.setText(null);
+                fg4.setMyMessage(null);
+                ImageView im = findViewById(R.id.bottle_shake);
+            }
+            else {
+            }
+
+        }
+
+    }
+
 
     private void bindViews(){
         RadioGroup rg_tab_bar = findViewById(R.id.rg_tab_bar);
@@ -184,7 +213,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
         switch (checkedId){
             case R.id.rb_activities:
                 if(fg1 == null){
-                    fg1 = new FragmentThree("2",mContext);
+                    fg1 = new FragementOne(mContext);
                     fTransaction.add(R.id.fragment_content,fg1);
                 }else{
                     fTransaction.show(fg1);
@@ -208,7 +237,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
                 break;
             case R.id.rb_bottle:
                 if(fg4 == null){
-                    fg4 = new FragmentThree("4",mContext);
+                    fg4 = new FragmentFour(mContext);
                     fTransaction.add(R.id.fragment_content,fg4);
                 }else{
                     fTransaction.show(fg4);

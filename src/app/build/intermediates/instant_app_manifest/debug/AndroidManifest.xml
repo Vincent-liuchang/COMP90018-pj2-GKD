@@ -18,6 +18,8 @@
     <uses-feature android:name="android.hardware.location.network" />
     <uses-feature android:name="android.hardware.location.gps" />
 
+    <uses-permission android:name="android.permission.VIBRATE" />
+
     <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
     <!-- <uses-sdk android:minSdkVersion="14" /> -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -44,6 +46,7 @@
         </activity>
         <activity android:name="com.example.mobile_pj2.UI.StudyHistory.StudyHistoryActivity" />
         <activity android:name="com.example.mobile_pj2.UI.LibraryInfo.LibInfoActivity" />
+        <activity android:name="com.example.mobile_pj2.UI.ReceivedMessage.ReceivedMessageActivity" />
 
         <service
             android:name="com.google.firebase.components.ComponentDiscoveryService"

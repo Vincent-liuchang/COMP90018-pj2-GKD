@@ -1,4 +1,4 @@
-package com.example.mobile_pj2.UI.LibraryInfo;
+package com.example.mobile_pj2.UI.Main;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -11,21 +11,18 @@ import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 import com.example.mobile_pj2.R;
 
-public class ViewPagerAdapter extends PagerAdapter {
+public class MainViewPagerAdapter extends PagerAdapter {
 
     private Context context;
     private LayoutInflater layoutInflater;
-    private Integer [] images = {R.mipmap.info_sta_1,R.mipmap.info_sta_2,
-            R.mipmap.info_sta_3,R.mipmap.info_sta_4,R.mipmap.info_sta_5,
-            R.mipmap.info_sta_6,R.mipmap.info_sta_7};
 
-    public ViewPagerAdapter(Context context) {
+    public MainViewPagerAdapter(Context context) {
         this.context = context;
     }
 
     @Override
     public int getCount() {
-        return images.length;
+        return 3;
     }
 
     @Override
@@ -37,10 +34,10 @@ public class ViewPagerAdapter extends PagerAdapter {
     @Override
     public Object instantiateItem(@NonNull ViewGroup container, int position) {
         layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View view = layoutInflater.inflate(R.layout.view_page_item,null);
-        ImageView statistic_imageView = view.findViewById(R.id.info_statistic_image);
+        View view = layoutInflater.inflate(R.layout.act_view_page_item,null);
+        ImageView statistic_imageView = view.findViewById(R.id.act_image);
 
-        String name = "mipmap/"+"info_sta_"+(position+1);
+        String name = "mipmap/"+"act"+(position+1);
         statistic_imageView.setImageResource(this.getResource(name));
         ViewPager vp = (ViewPager) container;
         vp.addView(view,0);
