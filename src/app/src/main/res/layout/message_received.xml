@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/message_background">
+
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="35dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginLeft="15dp"
+        android:background="@mipmap/message_arrow" />
+
+
+    <ImageView
+        android:id="@+id/thatsGreat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/arrow"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginRight="60dp"
+        android:layout_toEndOf="@id/arrow"
+        android:background="@mipmap/message_great"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/bottle_message_received"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_below="@+id/thatsGreat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="-308dp"
+        android:background="@mipmap/bottle_middle"
+        android:gravity="top|left"
+        android:hint="Say something to others. You are well come,"
+        android:lineSpacingMultiplier="1.8"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:paddingRight="15dp"
+        android:selectAllOnFocus="true"
+        android:singleLine="false"
+        android:textSize="16sp"
+        android:visibility="visible" />
+
+</RelativeLayout>
