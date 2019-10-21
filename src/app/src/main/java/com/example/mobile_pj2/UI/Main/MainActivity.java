@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
     public static final int Vibrator = 4;
     private Timer timer;
     private long startTime = 0;
+    private static MainController mainController;
     Animation rotateAnimation;
 
     @SuppressLint("HandlerLeak")
@@ -65,7 +66,9 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
         }
     };
 
-
+    public static MainController getMainController() {
+        return mainController;
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -100,7 +103,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
                 if (grantResults.length > 0
                         && grantResults[0]
                         == PackageManager.PERMISSION_GRANTED) {
-                    MainController mainController = new MainController(this.mainHandler, this.mContext, buildingList,new UpdateCallback() {
+                    mainController = new MainController(this.mainHandler, this.mContext, buildingList,new UpdateCallback() {
                         @Override
                         public void update() {
                             buildingAdapter.update();
@@ -183,22 +186,21 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
             Vibrator vibrator = (android.os.Vibrator) this
                     .getSystemService(Service.VIBRATOR_SERVICE);
 
-            if (fg4.getMyMessage() != null) {
-//                Toast.makeText(this, "Successfully Send a Message! ", Toast.LENGTH_LONG).show();
-                vibrator.vibrate(milliseconds);
-                EditText editText = fg4.getEditText();
-                editText.setText(null);
-                fg4.setMyMessage(null);
-                ImageView im = findViewById(R.id.bottle_shake);
-                im.startAnimation(rotateAnimation);
-            }
-            else {
-//                Toast.makeText(this, "Please Write Something First!", Toast.LENGTH_LONG).show();
+//            if (fg4.getMyMessage() != null) {
+////                Toast.makeText(this, "Successfully Send a Message! ", Toast.LENGTH_LONG).show();
+//                vibrator.vibrate(milliseconds);
+//                EditText editText = fg4.getEditText();
+//                editText.setText(null);
+//                fg4.setMyMessage(null);
+//                ImageView im = findViewById(R.id.bottle_shake);
+//                im.startAnimation(rotateAnimation);
+//            }
+//            else {
+////                Toast.makeText(this, "Please Write Something First!", Toast.LENGTH_LONG).show();
             }
 
         }
 
-    }
 
     private void bindViews(){
 
@@ -252,7 +254,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
                 break;
             case R.id.rb_bottle:
                 if(fg4 == null){
-                    fg4 = new FragmentFour(MainActivity.this);
+                    fg4 = new FragmentFour(MainActivity.this, mainController);
                     fTransaction.add(R.id.fragment_content,fg4);
                 }else{
                     fTransaction.show(fg4);

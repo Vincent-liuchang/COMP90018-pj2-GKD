@@ -29,27 +29,24 @@ public class VibrationHelper implements Runnable {
     private Context context;
     private final String TAG = getClass().getName();
     private String provider;
-    private CopyOnWriteArrayList<Building> buildingList;
-    private MainController mainController;
+
     private Handler handler;
     private long lastTime;
     private Animation rotateAnimation;
 
     private boolean isRefresh = false;
 
-    public VibrationHelper(Handler handler, Context context, CopyOnWriteArrayList<Building> buildingList, MainController mainController) {
+    public VibrationHelper(Handler handler, Context context) {
         this.handler = handler;
         this.context = context;
-        this.buildingList = buildingList;
-        this.mainController = mainController;
+
+
     }
     @Override
     public void run() {
-        lastTime = System.currentTimeMillis() - 5 * 1000;
         sensorManager = (SensorManager) context.getSystemService(Context.SENSOR_SERVICE);
         shakeListener = new ShakeSensorListener();
 
-        Looper.prepare();
         sensorManager.registerListener(shakeListener,
                 sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER),
                 SensorManager.SENSOR_DELAY_UI);
@@ -70,8 +67,6 @@ public class VibrationHelper implements Runnable {
         private static final int ACCELERATE_VALUE = 30;
         @Override
         public void onSensorChanged(SensorEvent event) {
-            System.out.println("test 22222");
-            // 推断是否处于刷新状态(比如微信中的查找附近人)
 //            if (isRefresh) {
 //                return;
 //            }
@@ -83,9 +78,6 @@ public class VibrationHelper implements Runnable {
 
             if (x >= ACCELERATE_VALUE || y >= ACCELERATE_VALUE
                     || z >= ACCELERATE_VALUE) {
-                long timeNow = System.currentTimeMillis();
-//                if ((timeNow - lastTime) >= 5 * 1000) {
-//                    lastTime = timeNow;
                     Message message = new Message();
                     message.what = 4;
                     handler.sendMessage(message);

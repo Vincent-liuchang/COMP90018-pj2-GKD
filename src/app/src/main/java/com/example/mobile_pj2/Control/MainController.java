@@ -6,6 +6,7 @@ package com.example.mobile_pj2.Control;
 
 import android.content.Context;
 import android.os.Handler;
+import android.os.Message;
 
 
 import com.example.mobile_pj2.Data.UpdateCallback;
@@ -22,6 +23,7 @@ public class MainController {
     private ThreadPoolExecutor myPool;
     private Handler mainHandler;
 
+
     public MainController(Handler mainHandler,Context context, CopyOnWriteArrayList<Building> buildingArrayList, UpdateCallback updateCallback){
         this.mainHandler = mainHandler;
         this.context = context;
@@ -33,17 +35,16 @@ public class MainController {
         FusedLocationListener fusedLocationListener = new FusedLocationListener(mainHandler,context,buildingArrayList,this);
         AccelerometerListener accelerometerListener = new AccelerometerListener(mainHandler,context);
         DatabaseListener databaseListener = new DatabaseListener(buildingArrayList, updateCallback);
-        VibrationHelper vibrationHelper = new VibrationHelper(mainHandler,context,buildingArrayList,this);
+
 
         myPool.execute(databaseListener);
 //        myPool.execute(GpsListener);
         myPool.execute(fusedLocationListener);
         myPool.execute(accelerometerListener);
-        myPool.execute(vibrationHelper);
         System.out.println("myPool Status" + myPool.toString());
     }
 
-    public ThreadPoolExecutor getMyPool(){
+    public  ThreadPoolExecutor getMyPool(){
         return myPool;
     }
 }

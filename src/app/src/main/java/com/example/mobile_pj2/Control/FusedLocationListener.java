@@ -52,7 +52,7 @@ public class FusedLocationListener implements Runnable{
         mFusedLocationClient = LocationServices.getFusedLocationProviderClient(context);
 
 
-        System.out.println("test 1");
+
 
         mLocationCallback = new LocationCallback() {
             /**
@@ -62,11 +62,10 @@ public class FusedLocationListener implements Runnable{
              */
             @Override
             public void onLocationResult(LocationResult locationResult) {
-                System.out.println("test 2");
+
 
                 if(mTrackingLocation){
-                    System.out.println("test 3");
-                    System.out.println("latitude: " + locationResult.getLocations().get(0).getLatitude() + ", longitude: " + locationResult.getLocations().get(0).getLongitude());
+
                     Location location = locationResult.getLocations().get(0);
                     updateLocation(location);
 
@@ -104,8 +103,6 @@ public class FusedLocationListener implements Runnable{
     private void updateLocation(Location location) {
         double x = location.getLongitude();
         double y = location.getLatitude();
-        System.out.println("x is " + x);
-        System.out.println("y is " + y);
         GeoPoint myLocation = new GeoPoint(x,y);
         for(Building building: this.buildingList) {
             building.calculateDistanse(myLocation);
