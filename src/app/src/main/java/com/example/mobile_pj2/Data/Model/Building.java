@@ -15,11 +15,13 @@ public class Building implements Comparable, Serializable {
     private GeoPoint bottomRight;
     private int distance;
     private boolean inside;
+    private String abbre;
 
     public Building(String buildingName){
         String coordinates = Configuration.getConfigurationValue(buildingName);
         String[] values = coordinates.split("\t")[0].split(" ");
         String intro = coordinates.split("\t")[1];
+        String abbre = coordinates.split("\t")[2];
 
         this.buildingName = buildingName;
         this.peopleInside = 0;
@@ -44,6 +46,10 @@ public class Building implements Comparable, Serializable {
 
     public String getBuildingName() {
         return buildingName;
+    }
+
+    public String getAbbre(){
+        return abbre;
     }
 
     public void setBuildingName(String buildingName) {

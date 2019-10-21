@@ -29,11 +29,11 @@ public class MainController {
                 10L, TimeUnit.SECONDS,
                 new LinkedBlockingQueue<Runnable>());
 
-        GpsListener GpsListener = new GpsListener(mainHandler,context,buildingArrayList,this);
+        FusedLocationListener fusedLocationListener = new FusedLocationListener(mainHandler,context,buildingArrayList,this);
         AccelerometerListener accelerometerListener = new AccelerometerListener(mainHandler,context);
         DatabaseListener databaseListener = new DatabaseListener(buildingArrayList, updateCallback);
         myPool.execute(databaseListener);
-        myPool.execute(GpsListener);
+        myPool.execute(fusedLocationListener);
         myPool.execute(accelerometerListener);
         System.out.println("myPool Status" + myPool.toString());
     }

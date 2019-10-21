@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UI.Main.MainActivity"
+    android:background="@mipmap/list_background">
+
+    <RelativeLayout
+        android:id="@+id/history_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <ImageView
+            android:id="@+id/study_history_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:gravity="center"
+            android:background="@mipmap/icon_back" />
+
+        <ImageView
+            android:id="@+id/study_history_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:background="@mipmap/my_study_history" />
+
+        <ImageView
+            android:id="@+id/study_history_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:background="@mipmap/my_study_history_delete" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list_history"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/history_top_bar"
+        android:divider="@color/grey"
+        android:dividerHeight="1px" />
+
+
+
+</RelativeLayout>

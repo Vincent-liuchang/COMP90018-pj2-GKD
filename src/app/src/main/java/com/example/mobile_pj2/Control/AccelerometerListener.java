@@ -32,7 +32,7 @@ public class AccelerometerListener implements Runnable, SensorEventListener{
         } else {
             //  G-Sensor
             mSensor = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
-            mSensorManager.registerListener(this, mSensor, SensorManager.SENSOR_DELAY_NORMAL);
+            mSensorManager.registerListener(this, mSensor, SensorManager.SENSOR_DELAY_UI);
         }
     }
 
@@ -50,12 +50,12 @@ public class AccelerometerListener implements Runnable, SensorEventListener{
             if(x==0 && y ==0){
                 Message message = new Message();
                 message.what = 2;
-                handler.sendMessageDelayed(message,0);
+                handler.sendMessageDelayed(message,1000);
 //                System.out.println("lay down your phone");
             }else{
                 Message message = new Message();
                 message.what = 3;
-                handler.sendMessageDelayed(message,0);
+                handler.sendMessageDelayed(message,1000);
 //                System.out.println("pick up your phone");
             }
         }

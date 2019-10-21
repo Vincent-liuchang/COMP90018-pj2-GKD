@@ -1,7 +1,6 @@
 package com.example.mobile_pj2.UI.Main;
 
 import android.content.Context;
-import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -36,8 +35,8 @@ public class BuildingAdapter extends BaseAdapter {
     }
 
     @Override
-    public Object getItem(int i) {
-        return null;
+    public String getItem(int i) {
+         return buildingList.get(i).getBuildingName();
     }
 
     @Override

@@ -1,13 +1,14 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:2:1-30:12
+ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:2:1-35:12
 MERGED from [com.google.firebase:firebase-analytics:17.2.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/8e72419e095a74097506f79242d2376a/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-firestore:21.1.1] /Users/vincent/.gradle/caches/transforms-2/files-2.1/a505bb970c6ad3e6905bd268b62b21e7/AndroidManifest.xml:2:1-26:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/abf20c2529ba9f8aa1f68deed5189c88/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/vincent/.gradle/caches/transforms-2/files-2.1/343010e55d3ed72aa89e6cc031e8e3f3/AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/f34ff81e4059736c3308439027764c10/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/233a3b3e2983ac694e26cc4657127f26/AndroidManifest.xml:17:1-55:12
 MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/2a727abc14a132826cad0b05ed97ced9/AndroidManifest.xml:17:1-36:12
 MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/5d567e8642e4cbbde44438363390e814/AndroidManifest.xml:17:1-25:12
@@ -17,6 +18,7 @@ MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /Users/vincent/.gr
 MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/d517e34ea5a4b9b5208c985b7011b326/AndroidManifest.xml:17:1-29:12
 MERGED from [com.google.firebase:firebase-common:19.1.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/2c5c290e6cc358ef9caba214361664bd/AndroidManifest.xml:2:1-24:12
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/4db1e2aa7fc85f978da7a1dbda7dd9de/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/34f09e08450d9f7610758cdff0458bf9/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/8b23e207d00e1c63b69ee82965455ec6/AndroidManifest.xml:17:1-40:12
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/e4a8410621214bcd7581d09056ffb37d/AndroidManifest.xml:17:1-27:12
 MERGED from [com.google.android.gms:play-services-measurement-base:17.2.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/90b6835861f449e0af63ce5280d85674/AndroidManifest.xml:2:1-9:12
@@ -50,22 +52,22 @@ MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/vincent/.gradle/cache
 MERGED from [com.google.firebase:firebase-database-collection:17.0.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/ace5c80fabfd7c20558aefdd3d303f59/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.firebase:protolite-well-known-types:17.0.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/4d2572cbeb1f0cf0c6df40fb486491df/AndroidManifest.xml:2:1-11:12
 MERGED from [io.grpc:grpc-android:1.21.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/9b39edb64190ef2b9ff976e0013b1ef7/AndroidManifest.xml:2:1-13:12
-INJECTED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:2:1-35:12
 	package
 		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:4:5-37
 		INJECTED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml
-		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:2:1-30:12
+		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:2:1-35:12
 		INJECTED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml
 	xmlns:tools
 		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml
-		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:2:1-30:12
+		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:2:1-35:12
 		INJECTED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:2:11-69
@@ -89,22 +91,30 @@ uses-permission#android.permission.ACCESS_FINE_LOCATION
 ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:7:5-79
 	android:name
 		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:7:22-76
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:8:5-107
+	android:maxSdkVersion
+		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:8:78-104
+	android:name
+		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:8:22-77
 uses-feature#android.hardware.location.network
-ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:9:5-70
+ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:10:5-70
 	android:name
-		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:9:19-67
+		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:10:19-67
 uses-feature#android.hardware.location.gps
-ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:10:5-66
+ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:11:5-66
 	android:name
-		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:10:19-63
+		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:11:19-63
 application
-ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:12:5-28:19
+ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:13:5-33:19
 MERGED from [com.google.firebase:firebase-analytics:17.2.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/8e72419e095a74097506f79242d2376a/AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-analytics:17.2.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/8e72419e095a74097506f79242d2376a/AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-firestore:21.1.1] /Users/vincent/.gradle/caches/transforms-2/files-2.1/a505bb970c6ad3e6905bd268b62b21e7/AndroidManifest.xml:16:5-24:19
 MERGED from [com.google.firebase:firebase-firestore:21.1.1] /Users/vincent/.gradle/caches/transforms-2/files-2.1/a505bb970c6ad3e6905bd268b62b21e7/AndroidManifest.xml:16:5-24:19
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/vincent/.gradle/caches/transforms-2/files-2.1/343010e55d3ed72aa89e6cc031e8e3f3/AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/vincent/.gradle/caches/transforms-2/files-2.1/343010e55d3ed72aa89e6cc031e8e3f3/AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/f34ff81e4059736c3308439027764c10/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/f34ff81e4059736c3308439027764c10/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/233a3b3e2983ac694e26cc4657127f26/AndroidManifest.xml:28:5-53:19
 MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/233a3b3e2983ac694e26cc4657127f26/AndroidManifest.xml:28:5-53:19
 MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/2a727abc14a132826cad0b05ed97ced9/AndroidManifest.xml:26:5-34:19
@@ -123,6 +133,8 @@ MERGED from [com.google.firebase:firebase-common:19.1.0] /Users/vincent/.gradle/
 MERGED from [com.google.firebase:firebase-common:19.1.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/2c5c290e6cc358ef9caba214361664bd/AndroidManifest.xml:11:5-22:19
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/4db1e2aa7fc85f978da7a1dbda7dd9de/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/4db1e2aa7fc85f978da7a1dbda7dd9de/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/34f09e08450d9f7610758cdff0458bf9/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/34f09e08450d9f7610758cdff0458bf9/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/8b23e207d00e1c63b69ee82965455ec6/AndroidManifest.xml:28:5-38:19
 MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/8b23e207d00e1c63b69ee82965455ec6/AndroidManifest.xml:28:5-38:19
 MERGED from [com.google.android.gms:play-services-measurement-base:17.2.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/90b6835861f449e0af63ce5280d85674/AndroidManifest.xml:7:5-20
@@ -142,33 +154,41 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/vinc
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.1.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/f8c5d18aba948989e4ee0dced6751be8/AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:17:9-35
+		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:18:9-35
 	android:label
-		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:15:9-41
+		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:16:9-41
 	tools:ignore
-		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:19:9-58
+		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:20:9-58
 	android:roundIcon
-		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:16:9-54
+		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:17:9-48
 	android:icon
-		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:14:9-43
+		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:15:9-43
 	android:allowBackup
-		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:13:9-35
+		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:14:9-35
 	android:theme
-		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:18:9-59
+		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:19:9-59
 activity#com.example.mobile_pj2.UI.Main.MainActivity
-ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:21:9-27:20
+ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:22:9-28:20
 	android:name
-		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:21:19-55
+		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:22:19-55
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:22:13-26:29
+ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:23:13-27:29
 action#android.intent.action.MAIN
-ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:23:17-69
+ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:24:17-69
 	android:name
-		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:23:25-66
+		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:24:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:25:17-77
+ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:26:17-77
 	android:name
-		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:25:27-74
+		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:26:27-74
+activity#com.example.mobile_pj2.UI.StudyHistory.StudyHistoryActivity
+ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:30:9-74
+	android:name
+		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:30:19-71
+activity#com.example.mobile_pj2.UI.LibraryInfo.LibInfoActivity
+ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:31:9-68
+	android:name
+		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:31:19-65
 uses-sdk
 INJECTED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml
@@ -181,6 +201,8 @@ MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/vincent/.gradle/caches/t
 MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/abf20c2529ba9f8aa1f68deed5189c88/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/vincent/.gradle/caches/transforms-2/files-2.1/343010e55d3ed72aa89e6cc031e8e3f3/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/vincent/.gradle/caches/transforms-2/files-2.1/343010e55d3ed72aa89e6cc031e8e3f3/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/f34ff81e4059736c3308439027764c10/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/f34ff81e4059736c3308439027764c10/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/233a3b3e2983ac694e26cc4657127f26/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/233a3b3e2983ac694e26cc4657127f26/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/2a727abc14a132826cad0b05ed97ced9/AndroidManifest.xml:20:5-44
@@ -199,6 +221,8 @@ MERGED from [com.google.firebase:firebase-common:19.1.0] /Users/vincent/.gradle/
 MERGED from [com.google.firebase:firebase-common:19.1.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/2c5c290e6cc358ef9caba214361664bd/AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/4db1e2aa7fc85f978da7a1dbda7dd9de/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/4db1e2aa7fc85f978da7a1dbda7dd9de/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/34f09e08450d9f7610758cdff0458bf9/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/34f09e08450d9f7610758cdff0458bf9/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/8b23e207d00e1c63b69ee82965455ec6/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/8b23e207d00e1c63b69ee82965455ec6/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.0] /Users/vincent/.gradle/caches/transforms-2/files-2.1/e4a8410621214bcd7581d09056ffb37d/AndroidManifest.xml:20:5-44

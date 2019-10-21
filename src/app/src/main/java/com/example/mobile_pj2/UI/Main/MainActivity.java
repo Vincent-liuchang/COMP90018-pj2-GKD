@@ -7,19 +7,23 @@ import androidx.fragment.app.FragmentTransaction;
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.example.mobile_pj2.Control.LocalTimeSaveTask;
 import com.example.mobile_pj2.Control.MainController;
 import com.example.mobile_pj2.Data.*;
 import com.example.mobile_pj2.Data.Model.*;
 import com.example.mobile_pj2.R;
 
-import java.util.Timer;
+import java.util.Date;
+import java.util.HashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 public class MainActivity extends AppCompatActivity implements RadioGroup.OnCheckedChangeListener{
@@ -32,8 +36,9 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
     public static final int UpdateInterface = 1;
     public static final int StartTimmer = 2;
     public static final int PauseTimmer = 3;
-    private Timer timer;
     private long startTime = 0;
+    private String currentBuilding;
+    private MainController mainController;
 
     @SuppressLint("HandlerLeak")
     private Handler  mainHandler = new Handler(){
@@ -60,17 +65,25 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
         mContext = MainActivity.this;
         Configuration.setConfiguration(mContext);
         this.addBuildings();
-        MainController mainController = new MainController(this.mainHandler, this.mContext, buildingList,new UpdateCallback() {
-            @Override
-            public void update() {
-                buildingAdapter.update();
-            }
-        });
-
         buildingAdapter = new BuildingAdapter(buildingList,mContext);
         bindViews();
+    }
 
-
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        switch (requestCode) {
+            case 1:
+                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    mainController = new MainController(this.mainHandler, this.mContext, buildingList,new UpdateCallback() {
+                        @Override
+                        public void update() {
+                            buildingAdapter.update();
+                        }
+                    });
+                } else {
+                    Toast.makeText(this, "Location services needed, please reopen app and grant it to use app",Toast.LENGTH_SHORT).show();
+                }break;
+        }
     }
 
     private void refreshUI(){
@@ -82,10 +95,12 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
                 if (building.getInside()) {
                     textView_building.setText(building.getBuildingName());
                     textView_number.setText(String.valueOf(building.getPeopleInside()));
+                    currentBuilding = building.getAbbre();
                     break;
                 }
                 textView_building.setText("No Building");
                 textView_number.setText("0");
+                currentBuilding = "???";
             }
         }
     }
@@ -98,10 +113,8 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
             long timePast = (System.currentTimeMillis()- startTime)/1000;
             int time0[] = transformTime(timePast);
             int time1[] = transformTime(System.currentTimeMillis()/1000);
-            System.out.println(time1[0]+ " "+time1[1]);
-            time1[0] = Math.max(20 - time1[0],0);
+            time1[0] = Math.max(20 + 24 - time1[0],0);
             time1[1] = 60 - time1[1];
-
             TextView textView_time = fg3.getView().findViewById(R.id.my_state_time);
             TextView textView_timeLeft = fg3.getView().findViewById(R.id.state_timeLeft);
             textView_time.setText(String.format("%02d",time0[0])+" : "+String.format("%02d",time0[1])+" : " + String.format("%02d",time0[2]));
@@ -110,21 +123,32 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
     }
 
     public void clearTimer(){
-        if(fg3 != null && fg3.getView() != null) {
-            startTime = System.currentTimeMillis();
-            int time1[] = transformTime(startTime);
-            System.out.println(time1[0] + " " + time1[1]);
-            time1[0] = Math.max(20 - time1[0],0);
-            time1[1] = 60 - time1[1];
-            TextView textView_timeLeft = fg3.getView().findViewById(R.id.state_timeLeft);
-            textView_timeLeft.setText(time1[0] + " hour " + time1[1] + " minute");
-        }
-
+        long currentTime = System.currentTimeMillis();
         if (startTime != 0) {
+            System.out.println((currentTime-startTime)/1000);
+            if( (currentTime-startTime)/1000 >= 60){
+                int recordTime[] = transformTime((currentTime-startTime)/1000);
+                HashMap record = new HashMap();
+                record.put("hour",recordTime[0]);
+                record.put("minute",recordTime[1]);
+                record.put("second",recordTime[2]);
+                record.put("currentBuilding",currentBuilding);
+                Date date = new Date();
+                record.put("Date",date);
+                mainController.getMyPool().execute(new LocalTimeSaveTask(this.mContext,record.toString()+"\n"));
+            }
             this.startTime = 0;
             TextView textView_time = fg3.getView().findViewById(R.id.my_state_time);
             textView_time.setText("00 : 00 : 00");
             System.out.println("stop timing");
+        }
+
+        if(fg3 != null && fg3.getView() != null) {
+            int time1[] = transformTime(currentTime/1000);
+            time1[0] = Math.max(20 + 24 - time1[0],0);
+            time1[1] = 60 - time1[1];
+            TextView textView_timeLeft = fg3.getView().findViewById(R.id.state_timeLeft);
+            textView_timeLeft.setText(time1[0] + " hour " + time1[1] + " minute");
         }
     }
 
@@ -137,7 +161,6 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
     }
 
     private void bindViews(){
-
         RadioGroup rg_tab_bar = findViewById(R.id.rg_tab_bar);
         rg_tab_bar.setOnCheckedChangeListener(this);
         //获取第一个单选按钮，并设置其为选中状态
@@ -146,15 +169,12 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
     }
 
     private void addBuildings(){
-
         buildingList = new CopyOnWriteArrayList<>();
-
         for (String building: Configuration.getConfiguration().keySet()){
             buildingList.add(new Building(building));
         }
 
     }
-
 
 
     @Override
@@ -164,7 +184,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
         switch (checkedId){
             case R.id.rb_activities:
                 if(fg1 == null){
-                    fg1 = new FragmentThree("2");
+                    fg1 = new FragmentThree("2",mContext);
                     fTransaction.add(R.id.fragment_content,fg1);
                 }else{
                     fTransaction.show(fg1);
@@ -172,7 +192,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
                 break;
             case R.id.rb_library:
                 if(fg2 == null){
-                    fg2 = new FragmentTwo(this.buildingAdapter);
+                    fg2 = new FragmentTwo(this.buildingAdapter,mContext);
                     fTransaction.add(R.id.fragment_content,fg2);
                 }else{
                     fTransaction.show(fg2);
@@ -180,7 +200,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
             break;
             case R.id.rb_myState:
                 if(fg3 == null){
-                    fg3 = new FragmentThree("No Building");
+                    fg3 = new FragmentThree("No Building",mContext);
                     fTransaction.add(R.id.fragment_content,fg3);
                 }else{
                     fTransaction.show(fg3);
@@ -188,7 +208,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
                 break;
             case R.id.rb_bottle:
                 if(fg4 == null){
-                    fg4 = new FragmentThree("4");
+                    fg4 = new FragmentThree("4",mContext);
                     fTransaction.add(R.id.fragment_content,fg4);
                 }else{
                     fTransaction.show(fg4);
