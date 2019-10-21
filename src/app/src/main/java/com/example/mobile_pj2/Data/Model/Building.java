@@ -1,6 +1,11 @@
 package com.example.mobile_pj2.Data.Model;
 
-public class Building implements Comparable{
+import com.example.mobile_pj2.Data.Configuration;
+import com.google.android.gms.common.internal.FallbackServiceBroker;
+
+import java.io.Serializable;
+
+public class Building implements Comparable, Serializable {
     private String buildingName;
     private int peopleInside;
     private String intro;
@@ -8,21 +13,24 @@ public class Building implements Comparable{
     private GeoPoint topRight;
     private GeoPoint bottomLeft;
     private GeoPoint bottomRight;
-    private double distance;
+    private int distance;
     private boolean inside;
 
     public Building(String buildingName){
         String coordinates = Configuration.getConfigurationValue(buildingName);
-
-        String[] latlongs = coordinates.split(" ");
+        String[] values = coordinates.split("\t")[0].split(" ");
+        String intro = coordinates.split("\t")[1];
 
         this.buildingName = buildingName;
         this.peopleInside = 0;
         this.intro = "";
-        this.topLeft = new GeoPoint(Double.valueOf(latlongs[0].split(",")[1]), Double.valueOf(latlongs[0].split(",")[0]));
-        this.topRight = new GeoPoint(Double.valueOf(latlongs[1].split(",")[1]), Double.valueOf(latlongs[1].split(",")[0]));
-        this.bottomLeft = new GeoPoint(Double.valueOf(latlongs[2].split(",")[1]), Double.valueOf(latlongs[2].split(",")[0]));
-        this.bottomRight = new GeoPoint(Double.valueOf(latlongs[3].split(",")[1]), Double.valueOf(latlongs[3].split(",")[0]));
+        this.buildingName = buildingName;
+        this.peopleInside = 0;
+        this.intro = intro;
+        this.topLeft = new GeoPoint(Double.valueOf(values[0].split(",")[1]), Double.valueOf(values[0].split(",")[0]));
+        this.topRight = new GeoPoint(Double.valueOf(values[1].split(",")[1]), Double.valueOf(values[1].split(",")[0]));
+        this.bottomLeft = new GeoPoint(Double.valueOf(values[2].split(",")[1]), Double.valueOf(values[2].split(",")[0]));
+        this.bottomRight = new GeoPoint(Double.valueOf(values[3].split(",")[1]), Double.valueOf(values[3].split(",")[0]));
         this.inside = false;
     }
 
@@ -58,11 +66,11 @@ public class Building implements Comparable{
         this.intro = intro;
     }
 
-    public void setDistance(double distance){
+    public void setDistance(int distance){
         this.distance = distance;
     }
 
-    public double getDistance() {
+    public int getDistance() {
         return distance;
     }
 
@@ -72,7 +80,8 @@ public class Building implements Comparable{
         double y = person.y;
         double center_x = (topLeft.x+topRight.x+bottomLeft.x+bottomRight.x)/4;
         double center_y = (topLeft.y+topRight.y+bottomLeft.y+bottomRight.y)/4;
-        this.distance = Math.sqrt(Math.pow((x-center_x),2)+Math.pow((y-center_y),2))*100000;
+        double distance = Math.sqrt(Math.pow((x-center_x),2)+Math.pow((y-center_y),2))*100000;
+        this.distance = (int)distance;
     }
 
     public boolean isInside(GeoPoint person) {

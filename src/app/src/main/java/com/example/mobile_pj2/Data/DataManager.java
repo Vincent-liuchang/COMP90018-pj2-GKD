@@ -26,18 +26,21 @@ import com.google.firebase.firestore.QuerySnapshot;
 import com.google.firebase.firestore.Transaction;
 
 
+
 public class DataManager {
 
     String TAG = getClass().getName();
 
     private FirebaseFirestore db;
     private CollectionReference buildingsRef;
+    private CollectionReference messageRef;
 
 
     public  DataManager(){
         // Access a Cloud Firestore instance from your Activity
         this.db = FirebaseFirestore.getInstance();
         this.buildingsRef = db.collection("buildings");
+        this.messageRef = db.collection("messages");
     }
 
 
@@ -56,6 +59,7 @@ public class DataManager {
                         for (QueryDocumentSnapshot doc : value) {
                             building.setPeopleInside(Integer.parseInt(doc.getData().get("PeopleInside").toString()));
                         }
+
                         callback.update();
                         Log.d("Status Now: ",String.valueOf(building.getPeopleInside()));
                     }
@@ -90,5 +94,22 @@ public class DataManager {
                     }
                 });
     }
+//    public void readMessages() {
+//
+//        DocumentReference documentRef = messageRef.document();
+//        Query query = buildingsRef.whereEqualTo("Messages", 0);
+//        db.runTransaction(new Transaction.Function<Void>() {
+//            @Nullable
+//            @Override
+//            public Void apply(@NonNull Transaction transaction) throws FirebaseFirestoreException {
+//                DocumentSnapshot snapshot = transaction.get(documentRef)
+//                return null;
+//            }
+//        }
+//
+//
+//
+//    }
+
 
 }

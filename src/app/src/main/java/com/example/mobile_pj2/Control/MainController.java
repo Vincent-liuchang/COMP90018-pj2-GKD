@@ -25,15 +25,22 @@ public class MainController {
     public MainController(Handler mainHandler,Context context, CopyOnWriteArrayList<Building> buildingArrayList, UpdateCallback updateCallback){
         this.mainHandler = mainHandler;
         this.context = context;
-        this.myPool = new ThreadPoolExecutor(5, 5,
+        this.myPool = new ThreadPoolExecutor(8, 8,
                 10L, TimeUnit.SECONDS,
                 new LinkedBlockingQueue<Runnable>());
 
-        GpsListener GpsListener = new GpsListener(mainHandler,context,buildingArrayList,this);
+//        GpsListener GpsListener = new GpsListener(mainHandler,context,buildingArrayList,this);
+        FusedLocationListener fusedLocationListener = new FusedLocationListener(mainHandler,context,buildingArrayList,this);
+        AccelerometerListener accelerometerListener = new AccelerometerListener(mainHandler,context);
         DatabaseListener databaseListener = new DatabaseListener(buildingArrayList, updateCallback);
+        VibrationHelper vibrationHelper = new VibrationHelper(mainHandler,context,buildingArrayList,this);
+
         myPool.execute(databaseListener);
-        myPool.execute(GpsListener);
-        System.out.println(myPool.toString());
+//        myPool.execute(GpsListener);
+        myPool.execute(fusedLocationListener);
+        myPool.execute(accelerometerListener);
+        myPool.execute(vibrationHelper);
+        System.out.println("myPool Status" + myPool.toString());
     }
 
     public ThreadPoolExecutor getMyPool(){
