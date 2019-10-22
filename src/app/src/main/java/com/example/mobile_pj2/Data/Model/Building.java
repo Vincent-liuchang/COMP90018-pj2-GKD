@@ -90,12 +90,6 @@ public class Building implements Comparable, Serializable {
 
         double x = person.x;
         double y = person.y;
-//            int a = (topLeft.x - bottomLeft.x) * (y - bottomLeft.y) - (topLeft.y - bottomLeft.y) * (x - bottomLeft.x);
-//            int b = (topRight.x - topLeft.x) * (y - topLeft.y) - (topRight.y - topLeft.y) * (x - topLeft.x);
-//            int c = (bottomRight.x - topRight.x) * (y - topRight.y) - (bottomRight.y - topRight.y) * (x - topRight.x);
-//            int d = (bottomLeft.x - bottomRight.x) * (y - bottomRight.y) - (bottomLeft.y - bottomRight.y) * (x - bottomRight.x);
-//            if ((a > 0 && b > 0 && c > 0 && d > 0) || (a < 0 && b < 0 && c < 0 && d < 0))
-//                return true;
 
         double lowLongtitude = Math.min(Math.min(topLeft.x, topRight.x), Math.min(bottomRight.x, bottomLeft.x));
         double highLongtitude = Math.max(Math.max(topLeft.x, topRight.x), Math.max(bottomRight.x, bottomLeft.x));

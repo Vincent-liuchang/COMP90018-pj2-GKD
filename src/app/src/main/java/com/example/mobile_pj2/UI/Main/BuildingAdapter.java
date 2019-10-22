@@ -52,7 +52,7 @@ public class BuildingAdapter extends BaseAdapter {
         TextView textView3 = view.findViewById(R.id.distance);
         TextView textView4 = view.findViewById(R.id.building_intro);
         ImageView imageView = view.findViewById(R.id.building_pic);
-        textView1.setText(buildingList.get(i).getBuildingName());
+        textView1.setText(buildingList.get(i).getAbbre());
         textView2.setText(Integer.toString(buildingList.get(i).getPeopleInside())+"");
         textView3.setText(Integer.toString(buildingList.get(i).getDistance())+" m");
         textView4.setText(buildingList.get(i).getIntro());

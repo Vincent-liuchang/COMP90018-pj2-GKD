@@ -54,7 +54,7 @@
         android:paddingTop="15dp"
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
-
+        android:maxLength="150"
         android:background="@mipmap/bottle_middle"
         android:gravity="top|left"
         android:selectAllOnFocus="true"

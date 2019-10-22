@@ -9,8 +9,6 @@ public class SubmitBottleMessageTask implements Runnable {
 
     public SubmitBottleMessageTask(String content, String buildingName){
         this.content = content;
-        if(buildingName == null)
-            buildingName = "???";
         this.buildingName = buildingName;
     }
 

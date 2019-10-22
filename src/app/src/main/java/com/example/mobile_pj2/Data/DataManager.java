@@ -28,6 +28,7 @@ import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 import com.google.firebase.firestore.Transaction;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
@@ -78,12 +79,12 @@ public class DataManager {
             @Override
             public Void apply(Transaction transaction) throws FirebaseFirestoreException {
                 DocumentSnapshot snapshot = transaction.get(documentRef);
-
                 // Note: this could be done without a transaction
                 //       by updating the population using FieldValue.increment()
                 int peopleInside = Integer.parseInt(snapshot.get("PeopleInside").toString()) + i;
                 transaction.update(documentRef, "PeopleInside", peopleInside);
                 // Success
+
                 return null;
             }
         }).addOnSuccessListener(new OnSuccessListener<Void>() {
@@ -109,7 +110,6 @@ public class DataManager {
                         if (task.isSuccessful()) {
                             messageNum = task.getResult().size();
                             RealUpdate(userName,content,buildingName);
-                            System.out.println("number of messages"+task.getResult().size());
                         } else {
                             Log.d(TAG, "Error getting documents: ", task.getException());
                         }
@@ -120,7 +120,6 @@ public class DataManager {
     public void RealUpdate(final String userName, final String content, final String buildingName){
         messageNum = messageNum + 1;
         String messageName = "message"+messageNum;
-        System.out.println("currentMessageName"+messageName);
         final DocumentReference documentRef = db.collection("bottleMessage").
                 document("beach").collection("messages").document(messageName);
         db.runTransaction(new Transaction.Function<Void>() {
@@ -132,6 +131,7 @@ public class DataManager {
                 message.put("buildingName", buildingName);
                 message.put("read",false);
                 message.put("userName",userName);
+                message.put("dateTime",new Date());
                 transaction.set(documentRef,message);
                 // Success
                 return null;
@@ -159,10 +159,8 @@ public class DataManager {
                 if (task.isSuccessful()) {
                     if(task.getResult().size()>0) {
                         int random_index = (int) (Math.random() * task.getResult().size());
-                        System.out.println("this is the message"+random_index);
                         DocumentSnapshot collected_bottole = task.getResult().getDocuments().get(random_index);
                         messagereceive = collected_bottole.getData();
-                        System.out.println("message is"+ messagereceive.get("content"));
                         callback.update(messagereceive);
                     }
                 } else {

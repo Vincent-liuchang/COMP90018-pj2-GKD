@@ -20,6 +20,7 @@ public class FragmentFour extends Fragment {
     public FragmentFour(Context context, String buildingName) {
         this.context = context;
         this.buildingName = buildingName;
+        System.out.println("FragmentFour"+buildingName);
     }
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {

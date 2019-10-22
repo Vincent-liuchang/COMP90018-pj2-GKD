@@ -35,7 +35,6 @@ public class FragmentThree extends Fragment {
 
         imageView_study_history.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                System.out.println("123");
                 Intent intent=new Intent(context, StudyHistoryActivity.class);
                 startActivity(intent);
             }

@@ -18,6 +18,7 @@ import android.widget.Toast;
 
 import com.example.mobile_pj2.Control.LocalTimeSaveTask;
 import com.example.mobile_pj2.Control.MainController;
+import com.example.mobile_pj2.Control.SubmitTask;
 import com.example.mobile_pj2.Data.*;
 import com.example.mobile_pj2.Data.Model.*;
 import com.example.mobile_pj2.R;
@@ -40,7 +41,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
     public static final int PauseTimmer = 3;
 
     private long startTime = 0;
-    private String currentBuilding = "???";
+    private String currentBuilding = "On The Way Study";
     public static MainController mainController;
 
     @SuppressLint("HandlerLeak")
@@ -57,6 +58,20 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
         }
     };
 
+
+    @Override
+    protected void onDestroy () {
+        super.onDestroy();
+        String b = "";
+        for (Building building : buildingList) {
+            if (building.getInside())
+                b = building.getBuildingName();
+            break;
+        }
+        System.out.println("erase" + b);
+        SubmitTask submitTask = new SubmitTask(-1, b);
+        mainController.getMyPool().execute(submitTask);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -95,9 +110,9 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
             TextView textView_building = fg3.getView().findViewById(R.id.where);
             TextView textView_number = fg3.getView().findViewById(R.id.num_with_you);
 
-            textView_building.setText("No Building");
+            textView_building.setText("On The Way Study");
             textView_number.setText("0");
-            currentBuilding = "???";
+            currentBuilding = "On The Way Study";
 
             for (Building building : buildingList) {
                 if (building.getInside()) {
@@ -118,8 +133,11 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
             long timePast = (System.currentTimeMillis()- startTime)/1000;
             int time0[] = transformTime(timePast);
             int time1[] = transformTime(System.currentTimeMillis()/1000);
-            time1[0] = Math.max(8 - time1[0],0);
+            int x = 8 - time1[0];
+            time1[0] = Math.max(x,0);
             time1[1] = 60 - time1[1];
+            if( x < 0)
+                time1[1] = 0;
             TextView textView_time = fg3.getView().findViewById(R.id.my_state_time);
             TextView textView_timeLeft = fg3.getView().findViewById(R.id.state_timeLeft);
             textView_time.setText(String.format("%02d",time0[0])+" : "+String.format("%02d",time0[1])+" : " + String.format("%02d",time0[2]));
@@ -151,8 +169,11 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
 
         if(fg3 != null && fg3.getView() != null) {
             int time1[] = transformTime(currentTime/1000);
-            time1[0] = Math.max(8 - time1[0],0);
+            int x = 8 - time1[0];
+            time1[0] = Math.max(x,0);
             time1[1] = 60 - time1[1];
+            if( x < 0)
+                time1[1] = 0;
             TextView textView_timeLeft = fg3.getView().findViewById(R.id.state_timeLeft);
             textView_timeLeft.setText(time1[0] + " hour " + time1[1] + " minute");
         }
@@ -206,7 +227,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
             break;
             case R.id.rb_myState:
                 if(fg3 == null){
-                    fg3 = new FragmentThree("No Building",mContext);
+                    fg3 = new FragmentThree("On The Way Study",mContext);
                     fTransaction.add(R.id.fragment_content,fg3);
                 }else{
                     fTransaction.show(fg3);
@@ -231,6 +252,4 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
         if(fg3 != null)fragmentTransaction.hide(fg3);
         if(fg4 != null)fragmentTransaction.hide(fg4);
     }
-
-
 }
