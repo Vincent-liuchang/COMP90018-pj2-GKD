@@ -7,4 +7,16 @@
     <string name="current_at">Currently at:</string>
     <string name="state1">Library will be closed in\nCarry on!</string>
     <string name="state2">Mates are with you!</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="start">Got it</string>
+    <string name="slide_1_title">slide 1</string>
+    <string name="slide_1_desc">slide 1 desc</string>
+    <string name="slide_2_title">slide 2</string>
+    <string name="slide_2_desc">slide 2 desc</string>
+    <string name="slide_3_title">slide 3</string>
+    <string name="slide_3_desc">slide 3 desc</string>
+    <string name="slide_4_desc">slide 4 desc</string>
+    <string name="slide_4_title">slide 4</string>
+
 </resources>
