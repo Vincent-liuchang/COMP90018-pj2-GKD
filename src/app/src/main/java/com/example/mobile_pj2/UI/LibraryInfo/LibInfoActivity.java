@@ -46,4 +46,9 @@ public class LibInfoActivity extends AppCompatActivity {
         int resId = this.getResources().getIdentifier(imageName, "mipmap", this.getPackageName());
         return resId;
     }
+    @Override
+    protected void onPause() {
+        super.onPause();
+        finish();
+    }
 }

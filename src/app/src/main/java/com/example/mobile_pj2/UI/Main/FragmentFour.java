@@ -16,8 +16,10 @@ public class FragmentFour extends Fragment {
     private ImageView writeMessage;
     private ImageView collectMessage;
     private  Context context;
-    public FragmentFour(Context context) {
+    private String buildingName;
+    public FragmentFour(Context context, String buildingName) {
         this.context = context;
+        this.buildingName = buildingName;
     }
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -28,6 +30,7 @@ public class FragmentFour extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context, WriteMessage.class);
+                intent.putExtra("currentBuilding",buildingName);
                 startActivity(intent);
             }
         });
@@ -36,6 +39,7 @@ public class FragmentFour extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context, ReceivedMessageActivity.class);
+                intent.putExtra("currentBuilding",buildingName);
                 startActivity(intent);
             }
         });

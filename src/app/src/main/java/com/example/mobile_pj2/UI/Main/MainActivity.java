@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
     public static final int PauseTimmer = 3;
 
     private long startTime = 0;
-    private String currentBuilding;
+    private String currentBuilding = "???";
     public static MainController mainController;
 
     @SuppressLint("HandlerLeak")
@@ -94,6 +94,11 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
         if(fg3 != null && fg3.getView() != null) {
             TextView textView_building = fg3.getView().findViewById(R.id.where);
             TextView textView_number = fg3.getView().findViewById(R.id.num_with_you);
+
+            textView_building.setText("No Building");
+            textView_number.setText("0");
+            currentBuilding = "???";
+
             for (Building building : buildingList) {
                 if (building.getInside()) {
                     textView_building.setText(building.getBuildingName());
@@ -101,9 +106,6 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
                     currentBuilding = building.getAbbre();
                     break;
                 }
-                textView_building.setText("No Building");
-                textView_number.setText("0");
-                currentBuilding = "???";
             }
         }
     }
@@ -128,8 +130,9 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
     public void clearTimer(){
         long currentTime = System.currentTimeMillis();
         if (startTime != 0) {
-            System.out.println((currentTime-startTime)/1000);
-            if( (currentTime-startTime)/1000 >= 60){
+            System.out.println("pick up your phone");
+            long seconds = (currentTime-startTime)/1000;
+            if(seconds > 60){
                 int recordTime[] = transformTime((currentTime-startTime)/1000);
                 HashMap record = new HashMap();
                 record.put("hour",recordTime[0]);
@@ -211,7 +214,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
                 break;
             case R.id.rb_bottle:
                 if(fg4 == null){
-                    fg4 = new FragmentFour(mContext);
+                    fg4 = new FragmentFour(mContext,currentBuilding);
                     fTransaction.add(R.id.fragment_content,fg4);
                 }else{
                     fTransaction.show(fg4);

@@ -30,11 +30,11 @@ public class MainController {
                 new LinkedBlockingQueue<Runnable>());
 
         FusedLocationListener fusedLocationListener = new FusedLocationListener(mainHandler,context,buildingArrayList,this);
-        AccelerometerListener accelerometerListener = new AccelerometerListener(mainHandler,context);
+        AccelerometerListener1 accelerometerListener1 = new AccelerometerListener1(mainHandler,context);
         DatabaseListener databaseListener = new DatabaseListener(buildingArrayList, updateCallback);
         myPool.execute(databaseListener);
         myPool.execute(fusedLocationListener);
-        myPool.execute(accelerometerListener);
+        myPool.execute(accelerometerListener1);
         System.out.println("myPool Status" + myPool.toString());
     }
 

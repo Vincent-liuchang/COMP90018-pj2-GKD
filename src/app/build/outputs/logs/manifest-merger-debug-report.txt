@@ -164,7 +164,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/vinc
 	tools:ignore
 		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:21:9-58
 	android:roundIcon
-		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:18:9-48
+		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:18:9-54
 	android:icon
 		ADDED from /Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/src/main/AndroidManifest.xml:16:9-43
 	android:allowBackup

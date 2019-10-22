@@ -2,6 +2,7 @@ package com.example.mobile_pj2.UI.Bottole;
 
 import android.annotation.SuppressLint;
 import android.app.Service;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -13,7 +14,8 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.mobile_pj2.Control.VibrationListener;
+import com.example.mobile_pj2.Control.GyroscopeListener;
+import com.example.mobile_pj2.Control.SubmitBottleMessageTask;
 import com.example.mobile_pj2.R;
 import com.example.mobile_pj2.UI.Main.MainActivity;
 
@@ -27,25 +29,29 @@ public class WriteMessage extends AppCompatActivity {
     private ThreadPoolExecutor mypool;
     private Handler myHandler;
     private final int Vibrator = 4;
-    private VibrationListener vibrationListener;
+    private GyroscopeListener gyroscopeListener;
+    private String currentBuilding;
 
     private  String messageReceived = "Happiness is letting go for what you think your life is supposed to look like and celebrating it for everying that it is !";
 
     @SuppressLint("HandlerLeak")
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        Intent intent = getIntent();
+        currentBuilding = intent.getStringExtra("currentBuilding");
+
         myHandler = (new Handler(){
             public void handleMessage(Message message){
                 switch(message.what){
                     case Vibrator:
                         Vibrate(500);
-
                 }
             }
         });
-        vibrationListener = new VibrationListener(myHandler,WriteMessage.this);
+        gyroscopeListener = new GyroscopeListener(myHandler,WriteMessage.this);
         mypool = MainActivity.mainController.getMyPool();
-        mypool.execute(vibrationListener);
+        mypool.execute(gyroscopeListener);
         setContentView(R.layout.write_message);
         bindViews();
         startWatchText(editText);
@@ -75,6 +81,7 @@ public class WriteMessage extends AppCompatActivity {
             }
         });
     }
+
     public EditText getEditText() {
         return this.editText;
     }
@@ -88,8 +95,6 @@ public class WriteMessage extends AppCompatActivity {
     }
 
     public void  startWatchText(EditText editText) {
-
-
         TextWatcher watcher = new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -103,8 +108,6 @@ public class WriteMessage extends AppCompatActivity {
 
             @Override
             public void afterTextChanged(Editable s) {
-
-
             }
         };
         editText.addTextChangedListener(watcher);
@@ -120,13 +123,11 @@ public class WriteMessage extends AppCompatActivity {
 
             finish();
         }
-//            ImageView im = findViewById(R.id.bottle_shake);
-//            im.startAnimation(rotateAnimation);
     }
 
     @Override
     protected void onDestroy() {
-        mypool.remove(vibrationListener);
+        mypool.remove(gyroscopeListener);
         super.onDestroy();
     }
 
@@ -137,6 +138,6 @@ public class WriteMessage extends AppCompatActivity {
     }
 
     private void sendMessageToServer(String message) {
-
+        mypool.execute(new SubmitBottleMessageTask(message,currentBuilding));
     }
 }

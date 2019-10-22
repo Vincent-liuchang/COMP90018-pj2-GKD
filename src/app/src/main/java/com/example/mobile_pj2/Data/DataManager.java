@@ -12,8 +12,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.example.mobile_pj2.Data.Model.Building;
+import com.example.mobile_pj2.UI.Bottole.ReceiveCallBack;
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
@@ -25,6 +28,10 @@ import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 import com.google.firebase.firestore.Transaction;
 
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Random;
+
 
 public class DataManager {
 
@@ -32,6 +39,8 @@ public class DataManager {
 
     private FirebaseFirestore db;
     private CollectionReference buildingsRef;
+    private int messageNum = 0;
+    private Map messagereceive;
 
 
     public  DataManager(){
@@ -91,5 +100,76 @@ public class DataManager {
                 });
     }
 
+    public void AddMessageToDatabase(final String userName, final String content, final String buildingName){
+        db.collection("bottleMessage").document("beach").collection("messages")
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            messageNum = task.getResult().size();
+                            RealUpdate(userName,content,buildingName);
+                            System.out.println("number of messages"+task.getResult().size());
+                        } else {
+                            Log.d(TAG, "Error getting documents: ", task.getException());
+                        }
+                    }
+                });
+    }
+
+    public void RealUpdate(final String userName, final String content, final String buildingName){
+        messageNum = messageNum + 1;
+        String messageName = "message"+messageNum;
+        System.out.println("currentMessageName"+messageName);
+        final DocumentReference documentRef = db.collection("bottleMessage").
+                document("beach").collection("messages").document(messageName);
+        db.runTransaction(new Transaction.Function<Void>() {
+            @Override
+            public Void apply(Transaction transaction) throws FirebaseFirestoreException {
+                DocumentSnapshot snapshot = transaction.get(documentRef);
+                Map<String, Object> message = new HashMap<>();
+                message.put("content", content);
+                message.put("buildingName", buildingName);
+                message.put("read",false);
+                message.put("userName",userName);
+                transaction.set(documentRef,message);
+                // Success
+                return null;
+            }
+        }).addOnSuccessListener(new OnSuccessListener<Void>() {
+            @Override
+            public void onSuccess(Void aVoid) {
+                Log.d(TAG, "BottleMessage Transaction success!");
+            }
+        })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        Log.w(TAG, "BottleMessage Transaction failure.", e);
+                    }
+                });
+    }
+
+    public void GetAnUnreadBottle(final String buildingName, final ReceiveCallBack callback){
+        CollectionReference collectionReference =  db.collection("bottleMessage").document("beach").collection("messages");
+        Query query = collectionReference.whereEqualTo("read",false).whereEqualTo("buildingName",buildingName);
+        query.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+            @Override
+            public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                if (task.isSuccessful()) {
+                    if(task.getResult().size()>0) {
+                        int random_index = (int) (Math.random() * task.getResult().size());
+                        System.out.println("this is the message"+random_index);
+                        DocumentSnapshot collected_bottole = task.getResult().getDocuments().get(random_index);
+                        messagereceive = collected_bottole.getData();
+                        System.out.println("message is"+ messagereceive.get("content"));
+                        callback.update(messagereceive);
+                    }
+                } else {
+                    Log.d(TAG, "Error getting documents: ", task.getException());
+                }
+            }
+        });
+    }
 
 }

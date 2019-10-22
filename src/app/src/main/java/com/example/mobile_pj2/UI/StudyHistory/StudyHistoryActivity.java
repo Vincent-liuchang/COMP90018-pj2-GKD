@@ -5,13 +5,11 @@ import androidx.core.app.ActivityCompat;
 
 import android.Manifest;
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.ListView;
 import com.example.mobile_pj2.R;
-import com.example.mobile_pj2.UI.Main.MainActivity;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -40,14 +38,16 @@ public class StudyHistoryActivity extends AppCompatActivity {
 
         try {
             File file = new File(mContext.getExternalFilesDir("UserData"),"StudyRecord.txt");
-            inputStream = new FileInputStream(file);
-            Long filelength = file.length();
-            byte[] filecontent = new byte[filelength.intValue()];
-            inputStream.read(filecontent);
-            String [] content = new String(filecontent).split("\n");
             ArrayList<String> studyHistory = new ArrayList<>();
-            Collections.addAll(studyHistory,content);
-            inputStream.close();
+            if(file.exists()) {
+                inputStream = new FileInputStream(file);
+                Long filelength = file.length();
+                byte[] filecontent = new byte[filelength.intValue()];
+                inputStream.read(filecontent);
+                String[] content = new String(filecontent).split("\n");
+                Collections.addAll(studyHistory, content);
+                inputStream.close();
+            }
 
             System.out.println("file writing success");
             studyHistoryAdapter = new StudyHistoryAdapter(studyHistory,mContext);
@@ -61,8 +61,6 @@ public class StudyHistoryActivity extends AppCompatActivity {
 
         back_imageView.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent=new Intent(StudyHistoryActivity.this, MainActivity.class);
-                startActivity(intent);
                 finish();
             }
         });
@@ -89,5 +87,4 @@ public class StudyHistoryActivity extends AppCompatActivity {
         back_imageView = findViewById(R.id.study_history_back);
         delete_imageView = findViewById(R.id.study_history_delete);
     }
-
 }

@@ -1,8 +1,6 @@
 package com.example.mobile_pj2.Data.Model;
 
 import com.example.mobile_pj2.Data.Configuration;
-import com.google.android.gms.common.internal.FallbackServiceBroker;
-
 import java.io.Serializable;
 
 public class Building implements Comparable, Serializable {
@@ -25,15 +23,13 @@ public class Building implements Comparable, Serializable {
 
         this.buildingName = buildingName;
         this.peopleInside = 0;
-        this.intro = "";
-        this.buildingName = buildingName;
-        this.peopleInside = 0;
         this.intro = intro;
         this.topLeft = new GeoPoint(Double.valueOf(values[0].split(",")[1]), Double.valueOf(values[0].split(",")[0]));
         this.topRight = new GeoPoint(Double.valueOf(values[1].split(",")[1]), Double.valueOf(values[1].split(",")[0]));
         this.bottomLeft = new GeoPoint(Double.valueOf(values[2].split(",")[1]), Double.valueOf(values[2].split(",")[0]));
         this.bottomRight = new GeoPoint(Double.valueOf(values[3].split(",")[1]), Double.valueOf(values[3].split(",")[0]));
         this.inside = false;
+        this.abbre = abbre;
     }
 
     public boolean getInside() {
@@ -49,7 +45,7 @@ public class Building implements Comparable, Serializable {
     }
 
     public String getAbbre(){
-        return abbre;
+        return this.abbre;
     }
 
     public void setBuildingName(String buildingName) {
