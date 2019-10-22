@@ -37,12 +37,22 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.AppCompat.NoActionBar" >
-        <activity android:name="com.example.mobile_pj2.UI.Main.MainActivity" >
+        <activity android:name="com.example.mobile_pj2.UI.Openning.SplashActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name="com.example.mobile_pj2.UI.Openning.WelcomeActivity" >
+            <intent-filter>
+                />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.mobile_pj2.UI.Main.MainActivity"
+            android:label="@string/app_name" >
         </activity>
         <activity android:name="com.example.mobile_pj2.UI.StudyHistory.StudyHistoryActivity" />
         <activity android:name="com.example.mobile_pj2.UI.LibraryInfo.LibInfoActivity" />

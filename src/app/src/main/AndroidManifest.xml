@@ -20,12 +20,23 @@
         android:theme="@style/Theme.AppCompat.NoActionBar"
         tools:ignore="ExtraText,GoogleAppIndexingWarning">
 
-        <activity android:name=".UI.Main.MainActivity">
+        <activity android:name=".UI.Openning.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <activity android:name=".UI.Openning.WelcomeActivity">
+            <intent-filter>
+                />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".UI.Main.MainActivity"
+            android:label="@string/app_name">
         </activity>
 
         <activity android:name=".UI.StudyHistory.StudyHistoryActivity" />
