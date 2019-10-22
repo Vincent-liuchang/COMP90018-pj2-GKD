@@ -161,7 +161,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
     public int[] transformTime(long time){
         int seconds = (int)time % 60;
         int minutes = (int)((time/60)%60);
-        int hours = (int)(((time/60)/60)%60);
+        int hours = (int)(((time/60)/60)%24);
         int a[] = {hours,minutes,seconds};
         return a;
     }
