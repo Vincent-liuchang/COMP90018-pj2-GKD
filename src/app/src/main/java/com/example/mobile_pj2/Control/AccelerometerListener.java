@@ -12,13 +12,13 @@ import android.util.Log;
 import static android.content.ContentValues.TAG;
 import static android.content.Context.SENSOR_SERVICE;
 
-public class AccelerometerListener1 implements Runnable, SensorEventListener{
+public class AccelerometerListener implements Runnable, SensorEventListener{
     private SensorManager mSensorManager;
     private Sensor mSensor;
     private Context context;
     private Handler handler;
 
-    public AccelerometerListener1(Handler handler, Context context){
+    public AccelerometerListener(Handler handler, Context context){
         this.context = context;
         this.handler = handler;
     }

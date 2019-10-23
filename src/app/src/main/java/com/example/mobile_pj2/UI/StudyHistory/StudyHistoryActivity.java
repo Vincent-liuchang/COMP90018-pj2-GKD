@@ -49,7 +49,7 @@ public class StudyHistoryActivity extends AppCompatActivity {
                 inputStream.close();
             }
 
-            System.out.println("file writing success");
+            System.out.println("file reading success");
             studyHistoryAdapter = new StudyHistoryAdapter(studyHistory,mContext);
             bindViews();
             list_main.setAdapter(studyHistoryAdapter);
