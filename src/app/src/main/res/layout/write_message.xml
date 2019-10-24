@@ -69,7 +69,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/bottle_message"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="60dp"
         android:background="@mipmap/bottle_throw"
         android:clickable="true"
         android:gravity="center" />

@@ -15,6 +15,6 @@ public class SubmitBottleMessageTask implements Runnable {
     @Override
     public void run() {
         DataManager dataManager = new DataManager();
-        dataManager.AddMessageToDatabase("Kevin",content,buildingName);
+        dataManager.AddMessageToDatabase("Tester",content,buildingName);
     }
 }

@@ -46,11 +46,66 @@
 
     </RelativeLayout>
 
-    <ListView
-        android:id="@+id/list_history"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+
+    <RelativeLayout
+        android:id="@+id/king"
         android:layout_below="@id/history_top_bar"
-        android:divider="@color/grey"
-        android:dividerHeight="1px" />
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:background="@mipmap/studyhistory_background1"
+        android:layout_margin="10dp">
+        <TextView
+            android:id="@+id/date_king"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="55dp"
+            android:text="Sep 22"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/grey"/>
+        <TextView
+            android:id="@+id/time_king"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="55dp"
+            android:text="8 hours 30 minus"
+            android:textSize="15sp"/>
+        <TextView
+            android:id="@+id/location_king"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="55dp"
+            android:text="Baillieu"
+            android:textSize="15sp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/grey"/>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/king_bar"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_below="@id/king"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="30dp"
+        android:background="@mipmap/studyhistory_background2">
+
+        <ListView
+            android:id="@+id/list_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:divider="@color/grey"
+            android:dividerHeight="1px" />
+
+    </RelativeLayout>
+
 </RelativeLayout>

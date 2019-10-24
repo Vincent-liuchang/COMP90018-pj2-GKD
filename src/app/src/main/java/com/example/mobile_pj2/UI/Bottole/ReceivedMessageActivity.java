@@ -16,10 +16,12 @@ import com.example.mobile_pj2.R;
 import com.example.mobile_pj2.UI.Main.MainActivity;
 import com.google.firebase.Timestamp;
 
+import java.text.SimpleDateFormat;
 import java.util.Map;
 
 public class ReceivedMessageActivity extends AppCompatActivity {
     public TextView textView;
+    private TextView textView_signature;
     private ImageView imageView_write_one;
     private ImageView imageView_go_back;
     private  String messageReceived = "Happiness is letting go for what you think your life is supposed to look like and celebrating it for everying that it is !";
@@ -40,12 +42,14 @@ public class ReceivedMessageActivity extends AppCompatActivity {
                 setContentView(R.layout.message_received);
                 textView = findViewById(R.id.bottle_message_received);
                 textView.setMovementMethod(ScrollingMovementMethod.getInstance());
-                String screenText = messageReceived.get("content")
-                        +"\n"+ ((Timestamp)messageReceived.get("dateTime")).toDate()
-                        +"\n"+ messageReceived.get("buildingName");
+                textView_signature = findViewById(R.id.bottle_message_signature);
+
+                SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MM.dd.yyyy");
+                String signature = simpleDateFormat.format( ((Timestamp)messageReceived.get("dateTime")).toDate())+"\n"+ messageReceived.get("buildingName");
 
                 imageView_go_back = findViewById(R.id.arrow);
-                textView.setText(screenText);
+                textView.setText(messageReceived.get("content").toString());
+                textView_signature.setText(signature);
                 imageView_go_back.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {

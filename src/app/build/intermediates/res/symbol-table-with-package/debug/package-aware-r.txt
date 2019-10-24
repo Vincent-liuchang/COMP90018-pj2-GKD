@@ -403,6 +403,7 @@ color bg_screen1
 color bg_screen2
 color bg_screen3
 color bg_screen4
+color blue
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -824,10 +825,12 @@ id auto
 id barrier
 id beginning
 id blocking
+id bootle_message
 id bottle_back
 id bottle_collect
 id bottle_message
 id bottle_message_received
+id bottle_message_signature
 id bottle_nomessage
 id bottle_nomessage_back
 id bottle_shake
@@ -855,6 +858,7 @@ id current_at
 id custom
 id customPanel
 id dark
+id date_king
 id date_record
 id decor_content_parent
 id default_activity_button
@@ -894,6 +898,8 @@ id info_top_pic
 id info_viewPager
 id invisible
 id italic
+id king
+id king_bar
 id layoutDots
 id left
 id light
@@ -903,6 +909,7 @@ id listMode
 id list_history
 id list_item
 id list_main
+id location_king
 id location_record
 id ly_top_bar
 id message
@@ -993,6 +1000,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id thatsGreat
 id time
+id time_king
 id time_record
 id timer
 id title
@@ -1146,6 +1154,8 @@ mipmap state_amazing
 mipmap state_background
 mipmap state_top_bar
 mipmap state_view_study_history
+mipmap studyhistory_background1
+mipmap studyhistory_background2
 mipmap tab_bar_background
 mipmap welcome_1_pic
 mipmap welcome_2_pic

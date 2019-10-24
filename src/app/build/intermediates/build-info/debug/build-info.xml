@@ -2,13 +2,13 @@
 <instant-run
     abi="x86"
     api-level="29"
-    build-mode="COLD"
+    build-mode="FULL"
     density="420dpi"
     format="10"
     plugin-version="3.4.2"
-    timestamp="1571808439600"
+    timestamp="1571960568756"
     token="2060656808879340209"
-    verifier="COLD_SWAP_REQUESTED" >
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
@@ -18,21 +18,69 @@
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="360" />
     <task
         name="verifier"
         duration="0" />
 
     <artifact
+        location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
+        type="SPLIT_MAIN" />
+    <artifact
+        location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+        type="SPLIT" />
+    <artifact
         location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
         type="SPLIT" />
 
     <build
         build-mode="FULL"
-        timestamp="1571808308008"
+        timestamp="1571960568756"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
+            location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            type="SPLIT" />
+        <artifact
             location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
         <artifact
             location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
@@ -42,12 +90,6 @@
             type="SPLIT" />
         <artifact
             location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />
         <artifact
             location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
@@ -62,21 +104,7 @@
             location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
-            type="SPLIT" />
-        <artifact
             location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
-            type="SPLIT" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1571808439600"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/Users/vincent/AndroidStudioProjects/Mobile-pj2/COMP90018-pj2-GKD/src/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
             type="SPLIT" />
     </build>
 

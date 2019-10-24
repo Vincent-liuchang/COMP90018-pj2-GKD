@@ -14,12 +14,22 @@ public class Building implements Comparable, Serializable {
     private int distance;
     private boolean inside;
     private String abbre;
+    private String openingTime;
+
+    public String getOpeningTime() {
+        return openingTime;
+    }
+
+    public void setOpeningTime(String openingTime) {
+        this.openingTime = openingTime;
+    }
 
     public Building(String buildingName){
-        String coordinates = Configuration.getConfigurationValue(buildingName);
-        String[] values = coordinates.split("\t")[0].split(" ");
-        String intro = coordinates.split("\t")[1];
-        String abbre = coordinates.split("\t")[2];
+        String buildinginformation = Configuration.getConfigurationValue(buildingName);
+        String[] values = buildinginformation.split("\t")[0].split(" ");
+        String intro = buildinginformation.split("\t")[1];
+        String abbre = buildinginformation.split("\t")[2];
+        String openingTime = buildinginformation.split("\t")[3];
 
         this.buildingName = buildingName;
         this.peopleInside = 0;
@@ -30,6 +40,7 @@ public class Building implements Comparable, Serializable {
         this.bottomRight = new GeoPoint(Double.valueOf(values[3].split(",")[1]), Double.valueOf(values[3].split(",")[0]));
         this.inside = false;
         this.abbre = abbre;
+        this.openingTime = openingTime;
     }
 
     public boolean getInside() {

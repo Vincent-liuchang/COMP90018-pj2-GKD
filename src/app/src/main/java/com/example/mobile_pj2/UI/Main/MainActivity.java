@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
     public static final int PauseTimmer = 3;
 
     private long startTime = 0;
-    private String currentBuilding = "On The Way Study";
+    private String currentBuilding = "No Building";
     public static MainController mainController;
 
     @SuppressLint("HandlerLeak")
@@ -110,13 +110,13 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
             TextView textView_building = fg3.getView().findViewById(R.id.where);
             TextView textView_number = fg3.getView().findViewById(R.id.num_with_you);
 
-            textView_building.setText("On The Way Study");
+            textView_building.setText("No Building");
             textView_number.setText("0");
-            currentBuilding = "On The Way Study";
+            currentBuilding = "No Building";
 
             for (Building building : buildingList) {
                 if (building.getInside()) {
-                    textView_building.setText(building.getBuildingName());
+                    textView_building.setText(building.getAbbre());
                     textView_number.setText(String.valueOf(building.getPeopleInside()));
                     currentBuilding = building.getAbbre();
                     break;
@@ -227,7 +227,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
             break;
             case R.id.rb_myState:
                 if(fg3 == null){
-                    fg3 = new FragmentThree("On The Way Study",mContext);
+                    fg3 = new FragmentThree(currentBuilding,mContext);
                     fTransaction.add(R.id.fragment_content,fg3);
                 }else{
                     fTransaction.show(fg3);

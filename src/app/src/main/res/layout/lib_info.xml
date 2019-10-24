@@ -52,7 +52,8 @@
             android:layout_alignBottom="@id/info_lib_pic"
             android:layout_marginBottom="66dp"
             android:layout_marginStart="33dp"
-            android:text="Closed At 20:00">
+            android:textColor="@color/blue"
+            android:text="Closed At 22:00">
         </TextView>
 
     </RelativeLayout>

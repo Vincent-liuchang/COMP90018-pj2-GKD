@@ -8,6 +8,7 @@
     <color name="green">#00D764</color>
     <color name="orange">#E46129</color>
     <color name="grey">#8F8E94</color>
+    <color name="blue">#53ADC7</color>
 
     <!-- Screens background color-->
     <color name="bg_screen1">#f64c73</color>

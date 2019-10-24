@@ -26,26 +26,48 @@
         android:background="@mipmap/message_great"
         android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/bottle_message_received"
+    <RelativeLayout
+        android:id="@+id/bootle_message"
         android:layout_width="match_parent"
         android:layout_height="220dp"
-        android:layout_below="@+id/thatsGreat"
+        android:layout_below="@id/thatsGreat"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="60dp"
         android:layout_marginTop="200dp"
         android:background="@mipmap/bottle_middle_transparent"
-        android:gravity="top|left"
-        android:lineSpacingMultiplier="1.9"
-        android:paddingLeft="15dp"
-        android:paddingTop="15dp"
-        android:paddingRight="15dp"
-        android:selectAllOnFocus="true"
-        android:singleLine="false"
-        android:textSize="16sp"
-        android:visibility="visible"
-        android:scrollbars="vertical"
+        android:gravity="top|left">
 
-        android:scrollbarStyle="insideInset"/>
+        <TextView
+            android:id="@+id/bottle_message_received"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="top|left"
+            android:lineSpacingMultiplier="1.9"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:paddingRight="15dp"
+            android:selectAllOnFocus="true"
+            android:singleLine="false"
+            android:textSize="16sp"
+            android:visibility="visible"
+            android:scrollbars="vertical"
+            android:scrollbarStyle="insideInset"
+            android:text="qwiueyoiweasdlkjlsaasdksaljdlsajdlsajdklasjlkdasjkldjaskljdaskjlksajkldjaslkjlkasjkldsajkjdlkasjdlkajlasjlkdjlkajdslywqyeiuqwyoueqweyowqyeqwyeoiwuyqiueqwyoe"/>
 
+        <TextView
+            android:id="@+id/bottle_message_signature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textAlignment="viewEnd"
+            android:layout_marginEnd="20dp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="22.22.22\nbaillieu"
+            android:textColor="@color/grey"
+            android:layout_marginBottom="6dp"
+            />
+
+    </RelativeLayout>
 </RelativeLayout>

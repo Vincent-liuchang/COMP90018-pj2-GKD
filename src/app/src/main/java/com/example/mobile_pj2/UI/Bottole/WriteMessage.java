@@ -40,7 +40,6 @@ public class WriteMessage extends AppCompatActivity {
 
         Intent intent = getIntent();
         currentBuilding = intent.getStringExtra("currentBuilding");
-
         myHandler = (new Handler(){
             public void handleMessage(Message message){
                 switch(message.what){
